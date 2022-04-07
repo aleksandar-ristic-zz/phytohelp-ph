@@ -19,7 +19,7 @@ const ProductCard = ({
 					<p>{purpose.slice(0, 40)}...</p>
 				</div>
 				<div className='product__footer'>
-					<Link to={link}>
+					<Link to={link} className='row'>
 						DETALJNIJE <HiOutlineArrowNarrowRight />
 					</Link>
 				</div>

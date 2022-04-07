@@ -39,23 +39,21 @@ export const BodyPart = () => {
 					<img src={`/img/${body}/${bodyData.image}`} alt={bodyPart} />
 				</div>
 
-				<div className='row name'>
-					<h2>{data[body].name}</h2>
-					<div className='row controls'>
-						<button
-							onClick={() => setIsOpen(prev => !prev)}
-							className='flex-center'
-						>
-							{isOpen ? (
-								<FaTimes className='search-icon' />
-							) : (
-								<FaSearch className='search-icon' />
-							)}
-						</button>
-						<div className='return flex-center'>
-							<HiOutlineArrowNarrowLeft onClick={() => navigate(-1)} />
-						</div>
+				<div className='links__controls row'>
+					<div className='return flex-center'>
+						<HiOutlineArrowNarrowLeft onClick={() => navigate(-1)} />
 					</div>
+					<h2>{data[body].name}</h2>
+					<button
+						onClick={() => setIsOpen(prev => !prev)}
+						className='search__btn flex-center'
+					>
+						{isOpen ? (
+							<FaTimes className='search-icon' />
+						) : (
+							<FaSearch className='search-icon' />
+						)}
+					</button>
 				</div>
 				<div className='flex-center search-container'>
 					<div className={isOpen ? 'show' : ''}>

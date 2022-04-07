@@ -6,7 +6,13 @@ export const Legs = () => {
 	const navigate = useNavigate()
 	return (
 		<main className='legs container'>
-			<div className='flex-center'>
+			<div className='links__controls row'>
+				<div className='return flex-center' onClick={() => navigate(-1)}>
+					<HiOutlineArrowNarrowLeft />
+				</div>
+				<h2>Telo</h2>
+			</div>
+			<div className='headline flex-center'>
 				<h2>Oblasti Noge</h2>
 				<p>Kliknite na sliku za pretragu anatomske kategorije.</p>
 			</div>
@@ -21,12 +27,6 @@ export const Legs = () => {
 				<Link className='tooltip thigh' title='Butina' to='/n'></Link>
 				<Link className='tooltip knee' title='Koleno' to='/n'></Link>
 				<Link className='tooltip feet' title='Stopalo' to='/noge/zglob'></Link>
-			</div>
-			<div className='flex-center'>
-				<div className='return'>
-					<HiOutlineArrowNarrowLeft onClick={() => navigate(-1)} />
-					nazad
-				</div>
 			</div>
 		</main>
 	)

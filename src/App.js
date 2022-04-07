@@ -6,8 +6,8 @@ import {
 	Chest,
 	Legs,
 	Product,
-	Search,
-	Blogs,
+	AllProducts,
+	About,
 	NotFound,
 	BodyPart
 } from './pages'
@@ -30,8 +30,8 @@ const App = () => {
 				<Route path='/noge' element={<Legs />} />
 				<Route path='/:body/:bodyPart' element={<BodyPart />} />
 				<Route path='/:body/:bodyPart/:index' element={<Product />} />
-				<Route path='/search/:search' element={<Search />} />
-				<Route path='/blogs' element={<Blogs />} />
+				<Route path='/search-products' element={<AllProducts />} />
+				<Route path='/about' element={<About />} />
 				<Route path='*' element={<NotFound />} />
 			</Routes>
 		</>

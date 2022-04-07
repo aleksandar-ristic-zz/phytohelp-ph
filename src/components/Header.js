@@ -13,7 +13,7 @@ const Header = () => {
 						<Link to='/'>Preparati</Link>
 					</li>
 					<li>
-						<Link to='/'>Objave</Link>
+						<Link to='/'>O nama</Link>
 					</li>
 					<li>
 						<Link to='/'>Kontakt</Link>

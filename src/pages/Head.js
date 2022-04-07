@@ -5,6 +5,12 @@ export const Head = () => {
 	const navigate = useNavigate()
 	return (
 		<main className='head container'>
+			<div className='links__controls row'>
+				<div className='return flex-center'>
+					<HiOutlineArrowNarrowLeft onClick={() => navigate(-1)} />
+				</div>
+				<h2>Telo</h2>
+			</div>
 			<div className='flex-center'>
 				<h2>Oblasti Glave</h2>
 				<p>Kliknite na sliku za pretragu anatomske kategorije.</p>
@@ -24,12 +30,6 @@ export const Head = () => {
 					to='/glava/sinusi'
 				></Link>
 				<Link className='tooltip teeth' title='zubi' to='/glava/zubi'></Link>
-			</div>
-			<div className='flex-center'>
-				<div className='return'>
-					<HiOutlineArrowNarrowLeft onClick={() => navigate(-1)} />
-					nazad
-				</div>
 			</div>
 		</main>
 	)

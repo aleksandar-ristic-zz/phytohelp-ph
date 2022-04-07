@@ -10,11 +10,11 @@ export const Product = () => {
 	const navigate = useNavigate()
 	return (
 		<main className='product container'>
-			<div className='row name'>
-				<h2>{data[body].parts[bodyPart].name}</h2>
-				<div className='return flex-center'>
-					<HiOutlineArrowNarrowLeft onClick={() => navigate(-1)} />
+			<div className='links__controls row'>
+				<div className='return flex-center' onClick={() => navigate(-1)}>
+					<HiOutlineArrowNarrowLeft />
 				</div>
+				<h2>{data[body].parts[bodyPart].name}</h2>
 			</div>
 
 			<div className='product-container'>
