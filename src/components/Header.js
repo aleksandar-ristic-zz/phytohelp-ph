@@ -1,10 +1,6 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { FaSearch } from 'react-icons/fa'
 
 const Header = () => {
-	const [isOpen, setIsOpen] = useState(false)
-
 	return (
 		<header className='container'>
 			<div className='row main-header'>
@@ -20,32 +16,9 @@ const Header = () => {
 						<Link to='/'>Objave</Link>
 					</li>
 					<li>
-						<button
-							onClick={() => setIsOpen(prev => !prev)}
-							className='flex-center'
-						>
-							<FaSearch className='search-icon' />
-						</button>
+						<Link to='/'>Kontakt</Link>
 					</li>
 				</ul>
-			</div>
-
-			<div className={`row search-container`}>
-				<form className={isOpen ? 'show' : ''}>
-					<label className='offscreen' htmlFor='search'>
-						Pretražite delove tela ili preparate
-					</label>
-					<input
-						type='search'
-						name='search'
-						id='search'
-						placeholder='Pretražite delove tela'
-						autoComplete='off'
-					/>
-					<button className='search-icon'>
-						<FaSearch />
-					</button>
-				</form>
 			</div>
 		</header>
 	)

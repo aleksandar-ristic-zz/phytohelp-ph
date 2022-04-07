@@ -12,7 +12,7 @@ export const Product = () => {
 		<main className='product container'>
 			<div className='row name'>
 				<h2>{data[body].parts[bodyPart].name}</h2>
-				<div className='return'>
+				<div className='return flex-center'>
 					<HiOutlineArrowNarrowLeft onClick={() => navigate(-1)} />
 				</div>
 			</div>

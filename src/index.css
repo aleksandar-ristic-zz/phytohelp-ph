@@ -106,9 +106,10 @@ h2 {
 
 header {
 	padding: 1.5rem 1rem;
+	background-color: hsla(141deg, 45%, 81%, 0.8);
 	border-bottom: 1px solid hsl(153deg, 39%, 41%);
-	-webkit-box-shadow: 0px 3px 5px hsla(0deg, 0%, 0%, 0.15);
-	box-shadow: 0px 3px 5px hsla(0deg, 0%, 0%, 0.15);
+	-webkit-box-shadow: 2px 5px 9px hsla(0deg, 0%, 0%, 0.15);
+	box-shadow: 2px 5px 9px hsla(0deg, 0%, 0%, 0.15);
 }
 header .main-header {
 	width: 100%;
@@ -163,7 +164,8 @@ header ul li a:hover,
 header ul li a:active {
 	color: hsl(355deg, 78%, 56%);
 }
-header ul li:last-of-type button {
+.controls button,
+.controls .return {
 	width: 2.5rem;
 	height: 2.5rem;
 	border: none;
@@ -178,70 +180,70 @@ header ul li:last-of-type button {
 	box-shadow: 2px 2px 2px hsla(0deg, 0%, 0%, 0.15),
 		inset -2px -2px 2px hsla(0deg, 0%, 0%, 0.15);
 }
-header ul li:last-of-type button:hover,
-header ul li:last-of-type button:active {
+.controls button:hover,
+.controls .return:hover,
+.controls button:active,
+.controls .return:active {
 	color: hsl(355deg, 78%, 56%);
 	-webkit-box-shadow: inset 3px 3px 5px hsla(0deg, 0%, 0%, 0.15),
 		inset -3px -3px 5px hsla(0deg, 0%, 0%, 0.15);
 	box-shadow: inset 3px 3px 5px hsla(0deg, 0%, 0%, 0.15),
 		inset -3px -3px 5px hsla(0deg, 0%, 0%, 0.15);
 }
-header .search-container {
-	padding: 1rem 0 0;
+.search-container {
+	padding: 1rem 0 3rem;
 }
-header .search-container form {
+.search-container div {
+	position: relative;
 	display: none;
 	margin: 0 auto;
 	height: -webkit-fit-content;
 	height: -moz-fit-content;
 	height: fit-content;
 }
-header .search-container form.show {
+.search-container div.show {
 	display: block;
 	animation: drop 0.5s ease forwards;
 }
 @keyframes drop {
 	from {
 		opacity: 0;
-		transform: translateY(1.5rem);
+		transform: translateY(-1.5rem);
 	}
 	to {
 		opacity: 1;
 		transform: translateY(0);
 	}
 }
-header .search-container input {
+.search-container input {
 	min-width: 20rem;
 	border: 2px solid hsla(153deg, 39%, 41%, 0.7);
+	background-color: hsl(141deg, 45%, 81%);
 	border-radius: 0.5rem;
-	padding: 0.25rem 0.5rem;
+	padding: 0.5rem 0.75rem;
 	color: hsl(0deg, 0%, 30%);
+	font-size: 1.1rem;
 	outline: none;
 }
-header .search-container input:placeholder {
+.search-container input:placeholder {
 	color: hsl(0deg, 0%, 50%);
 }
-header .search-container input:focus {
+.search-container input:focus {
 	border: 2px solid hsla(153deg, 39%, 41%, 0.9);
 }
-header .search-container .search-icon {
-	width: 2rem;
-	height: 2rem;
+.search-container .icon {
+	position: absolute;
+	width: 1.5rem;
+	height: 1.5rem;
 	top: 50%;
+	right: 1rem;
 	border: 0;
 	border-radius: 50%;
-	background-color: hsl(141deg, 45%, 81%);
-	color: hsl(355deg, 78%, 56%);
-	-webkit-box-shadow: 2px 2px 2px hsla(0deg, 0%, 0%, 0.15),
-		inset -2px -2px 2px hsla(0deg, 0%, 0%, 0.15);
-	box-shadow: 2px 2px 2px hsla(0deg, 0%, 0%, 0.15),
-		inset -2px -2px 2px hsla(0deg, 0%, 0%, 0.15);
+	transform: translateY(-50%);
+	transition: color 0.2s linear;
 }
-header .search-container .search-icon:hover {
-	-webkit-box-shadow: inset 3px 3px 3px hsla(0deg, 0%, 0%, 0.15),
-		inset -3px -3px 3px hsla(0deg, 0%, 0%, 0.15);
-	box-shadow: inset 3px 3px 3px hsla(0deg, 0%, 0%, 0.15),
-		inset -3px -3px 3px hsla(0deg, 0%, 0%, 0.15);
+.search-container input:focus + .icon {
+	color: hsl(355deg, 78%, 56%);
 }
 @media screen and (min-width: 768px) {
 	header .logo-container img {
@@ -258,7 +260,7 @@ header .search-container .search-icon:hover {
 		-ms-flex-direction: row;
 		flex-direction: row;
 	}
-	header .search-container input {
+	.search-container input {
 		width: 600px;
 	}
 }
@@ -495,7 +497,20 @@ header .search-container .search-icon:hover {
 	padding: 1rem 0.5rem;
 }
 .body__part .name .return {
+	margin-left: 0.75rem;
 	cursor: pointer;
+	-webkit-box-shadow: 2px 2px 2px hsla(0deg, 0%, 0%, 0.15),
+		inset -2px -2px 2px hsla(0deg, 0%, 0%, 0.15);
+	box-shadow: 2px 2px 2px hsla(0deg, 0%, 0%, 0.15),
+		inset -2px -2px 2px hsla(0deg, 0%, 0%, 0.15);
+	transition: all 0.2s ease-in-out;
+}
+.body__part .name .return:hover,
+.body__part .name .return:active {
+	-webkit-box-shadow: inset 3px 3px 5px hsla(0deg, 0%, 0%, 0.15),
+		inset -3px -3px 5px hsla(0deg, 0%, 0%, 0.15);
+	box-shadow: inset 3px 3px 5px hsla(0deg, 0%, 0%, 0.15),
+		inset -3px -3px 5px hsla(0deg, 0%, 0%, 0.15);
 }
 .body__part .name .return svg {
 	font-size: 1.75rem;
@@ -504,8 +519,8 @@ header .search-container .search-icon:hover {
 	transition: all 0.2s ease-in-out;
 }
 .body__part .name .return:hover svg {
-	-webkit-transform: scaleX(1.05) translateX(-5px);
-	transform: scaleX(1.05) translateX(-5px);
+	-webkit-transform: scaleX(1.05) translateX(-2px);
+	transform: scaleX(1.05) translateX(-2px);
 }
 .body__part .products__container {
 	display: -webkit-box;
@@ -530,6 +545,7 @@ header .search-container .search-icon:hover {
 	justify-content: center;
 	-webkit-box-shadow: 5px 5px 10px hsla(0deg, 0%, 0%, 0.4);
 	box-shadow: 5px 5px 10px hsla(0deg, 0%, 0%, 0.4);
+	animation: drop 0.75s ease-in-out;
 }
 .body__part .products__container .img__container img {
 	width: 100%;
@@ -553,7 +569,7 @@ header .search-container .search-icon:hover {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	padding: 0.5rem 0 3rem;
+	padding: 3rem 0 4rem;
 }
 .body__part .products__container .product__headline h2 {
 	font-size: 2rem;
@@ -565,6 +581,7 @@ header .search-container .search-icon:hover {
 	font-size: 0.925rem;
 	letter-spacing: 2px;
 	color: hsl(0deg, 0%, 40%);
+	text-align: center;
 }
 .body__part .products__container .product__headline p:after {
 	content: '';
@@ -579,17 +596,21 @@ header .search-container .search-icon:hover {
 	border-radius: 0.5rem;
 }
 .body__part .products__container .product__cards__container {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	gap: 1.75rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	row-gap: 1.75rem;
+	animation: up 0.75s ease-in-out;
+}
+@keyframes up {
+	from {
+		opacity: 0;
+		transform: translateY(5rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }
 .body__part .products__container .product__cards__container .product__card {
 	width: 100%;
@@ -713,7 +734,17 @@ header .search-container .search-icon:hover {
 	-webkit-transform: scaleX(1.05) translateX(5px);
 	transform: scaleX(1.05) translateX(5px);
 }
+@media (min-width: 768px) {
+	.body__part .products__container .product__cards__container {
+		grid-template-columns: repeat(2, 1fr);
+		column-gap: 0.75rem;
+	}
+}
 @media (min-width: 1024px) {
+	.body__part .products__container .product__cards__container {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
 	.body__part
 		.products__container
 		.product__cards__container
@@ -728,6 +759,19 @@ header .search-container .search-icon:hover {
 	.product__card
 	.product__right {
 	width: 49%;
+	display: flex;
+	justify-content: center;
+}
+.body__part
+	.products__container
+	.product__cards__container
+	.product__card
+	.product__right
+	.img__wrapper {
+	display: flex;
+	justify-content: center;
+	width: 9.5rem;
+	height: 9.5rem;
 	border-radius: 50%;
 	background-color: hsla(129deg, 53%, 90%, 0.8);
 }
@@ -736,11 +780,12 @@ header .search-container .search-icon:hover {
 	.product__cards__container
 	.product__card
 	.product__right
+	.img__wrapper
 	img {
-	max-width: 100%;
-	height: 100%;
-	-o-object-fit: cover;
-	object-fit: cover;
+	width: 10rem;
+	height: 10rem;
+	-o-object-fit: contain;
+	object-fit: contain;
 }
 
 .product .name {
@@ -750,7 +795,23 @@ header .search-container .search-icon:hover {
 	padding: 1rem 0.5rem;
 }
 .product .name .return {
+	width: 2.5rem;
+	height: 2.5rem;
 	cursor: pointer;
+	border-radius: 50%;
+	-webkit-transition: 0.2s all ease-in-out;
+	transition: 0.2s all ease-in-out;
+	-webkit-box-shadow: 2px 2px 2px hsla(0deg, 0%, 0%, 0.15),
+		inset -2px -2px 2px hsla(0deg, 0%, 0%, 0.15);
+	box-shadow: 2px 2px 2px hsla(0deg, 0%, 0%, 0.15),
+		inset -2px -2px 2px hsla(0deg, 0%, 0%, 0.15);
+}
+.product .name .return:hover,
+.product .name .return:active {
+	-webkit-box-shadow: inset 3px 3px 5px hsla(0deg, 0%, 0%, 0.15),
+		inset -3px -3px 5px hsla(0deg, 0%, 0%, 0.15);
+	box-shadow: inset 3px 3px 5px hsla(0deg, 0%, 0%, 0.15),
+		inset -3px -3px 5px hsla(0deg, 0%, 0%, 0.15);
 }
 .product .name .return svg {
 	font-size: 1.75rem;
@@ -759,8 +820,8 @@ header .search-container .search-icon:hover {
 	transition: all 0.2s ease-in-out;
 }
 .product .name .return:hover svg {
-	-webkit-transform: scaleX(1.05) translateX(-5px);
-	transform: scaleX(1.05) translateX(-5px);
+	-webkit-transform: scaleX(1.05) translateX(-2px);
+	transform: scaleX(1.05) translateX(-2px);
 }
 .product .product-container {
 	display: -webkit-box;
@@ -776,11 +837,23 @@ header .search-container .search-icon:hover {
 	height: 100%;
 	-o-object-fit: cover;
 	object-fit: cover;
+	animation: up 1s ease-in-out;
 }
 .product .product-container .text-container {
 	max-width: 30rem;
 	padding: 0.5rem;
 	background-color: hsla(129deg, 53%, 90%, 0.8);
+	animation: from-left 0.75s forwards;
+}
+@keyframes from-left {
+	from {
+		opacity: 0;
+		transform: translateX(-5rem);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }
 .product .product-container .text-container .headline {
 	display: -webkit-box;

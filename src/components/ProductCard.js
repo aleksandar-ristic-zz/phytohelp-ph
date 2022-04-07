@@ -26,7 +26,9 @@ const ProductCard = ({
 			</div>
 
 			<div className='product__right'>
-				<img src={`${path}${image}`} alt={name} />
+				<div className='img__wrapper'>
+					<img src={`${path}${image}`} alt={name} />
+				</div>
 			</div>
 		</div>
 	)

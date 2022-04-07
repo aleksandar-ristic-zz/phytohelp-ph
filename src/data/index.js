@@ -260,8 +260,8 @@ const body = {
 					},
 					{
 						id: 20,
-						name: 'Dr.Theiss žalfija i bokvica pastille',
-						desc: 'čaj',
+						name: 'Dr.Theiss žalfija i bokvica',
+						desc: 'pastille',
 						purpose:
 							'Ublažavaju tegobe koje prate upalu sluznice usta i grla.Kod nadražaja gornjih disajnih puteva.',
 						effects:
