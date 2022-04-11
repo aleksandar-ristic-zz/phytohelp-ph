@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import ProductCard from '../components/ProductCard'
 import { HiOutlineArrowNarrowLeft } from 'react-icons/hi'
@@ -9,10 +9,17 @@ export const BodyPart = () => {
 	const { body, bodyPart } = useParams()
 	const bodyData = data[body].parts[bodyPart]
 
+	const searchRef = useRef()
 	const [products, setProducts] = useState(bodyData.products)
 	const [searchText, setSearchText] = useState('')
 	const [isOpen, setIsOpen] = useState(false)
 	const navigate = useNavigate()
+
+	useEffect(() => {
+		if (isOpen) {
+			searchRef.current.focus()
+		}
+	}, [isOpen])
 
 	useEffect(() => {
 		if (!searchText) {
@@ -61,6 +68,7 @@ export const BodyPart = () => {
 							Pretražite delove tela ili preparate
 						</label>
 						<input
+							ref={searchRef}
 							type='search'
 							name='search'
 							id='search'

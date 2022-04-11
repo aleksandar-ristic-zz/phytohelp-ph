@@ -68,6 +68,7 @@ export const Contact = () => {
 						className='form__control'
 						id='name'
 						placeholder='Unesite Vaše ime i prezime'
+						autoComplete='off'
 						value={name}
 						onChange={e => setName(e.target.value)}
 					/>
@@ -79,6 +80,7 @@ export const Contact = () => {
 						className='form__control'
 						id='email'
 						placeholder='Unesite Vašu email adresu'
+						autoComplete='off'
 						value={email}
 						onChange={e => setEmail(e.target.value)}
 					/>
@@ -90,6 +92,7 @@ export const Contact = () => {
 						className='form__control'
 						id='subject'
 						placeholder='Unesite naslov poruke'
+						autoComplete='off'
 						value={subject}
 						onChange={e => setSubject(e.target.value)}
 					/>
