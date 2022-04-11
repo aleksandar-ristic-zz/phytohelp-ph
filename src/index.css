@@ -295,25 +295,55 @@ header ul li a:active {
 .home .legs {
 	grid-area: legs;
 }
-.home a {
-	display: inline-block;
-	width: 100%;
-	height: 100%;
+.home a,
+.hands a {
+	outline: none;
+	border-radius: 0.5rem;
 }
 .home a:hover,
-.home a:active {
-	background-color: hsla(153deg, 39%, 41%, 0.3);
-}
-.home a:focus {
-	border: 2px solid hsl(153deg, 39%, 41%);
-	border-radius: 0.5rem;
-	outline: none;
+.home a:active,
+.home a:focus,
+.hands a:hover,
+.hands a:active,
+.hands a:focus {
+	border: 1px solid hsl(153deg, 39%, 41%);
+	background-color: hsla(141deg, 45%, 81%, 0.7);
+	-webkit-box-shadow: 0 0 20px hsl(141deg, 45%, 81%),
+		0 0 50px hsla(141deg, 45%, 81%, 0.8), 0 0 80px hsla(141deg, 45%, 81%, 0.5);
+	box-shadow: 0 0 20px hsl(141deg, 45%, 81%),
+		0 0 50px hsla(141deg, 45%, 81%, 0.8), 0 0 80px hsla(141deg, 45%, 81%, 0.5);
 }
 @media (min-width: 768px) {
 	.home .grid-container {
 		grid-template-columns: 2fr 1fr 1.6fr 0.8fr 1.8fr;
 		grid-template-rows: 0.58fr 1fr 1.5fr;
 	}
+}
+.home .links {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.home .links a {
+	display: block;
+	margin-top: 0.5rem;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
+	background-color: hsl(0deg, 0%, 20%);
+	font-size: 1.1rem;
+	text-decoration: none;
+	text-align: center;
+	color: hsl(141deg, 45%, 81%);
+	-webkit-transition: 0.2s all ease;
+	transition: 0.2s all ease;
+}
+.home .links a:hover,
+.home .links a:focus,
+.home .links a:active {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: 0;
+	color: hsl(355deg, 78%, 56%);
 }
 .head .img-container {
 	position: relative;
@@ -883,4 +913,207 @@ header ul li a:active {
 .search__btn:hover,
 .search__btn:active {
 	color: hsl(355deg, 78%, 56%);
+}
+.torso .img-container {
+	position: relative;
+	max-width: 600px;
+	min-height: 100vh;
+	margin: 0 auto;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+@media (max-width: 600px) {
+	.torso .img-container {
+		background-color: hsla(153deg, 39%, 41%, 0.8);
+	}
+}
+.torso .grid-container {
+	display: grid;
+	grid-template-columns: 0.5fr 1fr 0.5fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-template-areas: 'el eu er' 'el stitna er' 'el pluca er' 'el vz er' 'el creva er' 'el udm er';
+}
+.torso .el {
+	grid-area: el;
+}
+.torso .eu {
+	grid-area: eu;
+}
+.torso .er {
+	grid-area: er;
+}
+.torso .stitna.links {
+	grid-area: stitna;
+}
+.torso .pluca.links {
+	grid-area: pluca;
+}
+.torso .vz.links {
+	grid-area: vz;
+}
+.torso .creva.links {
+	grid-area: creva;
+}
+.torso .udm.links {
+	grid-area: udm;
+}
+.torso .links {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 0.5rem;
+	outline: none;
+	gap: 0.25rem;
+}
+.torso .links a {
+	visibility: hidden;
+	pointer-events: none;
+	cursor: auto;
+	color: hsl(0deg, 0%, 20%);
+	text-decoration: none;
+	font-weight: 500;
+}
+.torso .links:active,
+.torso .links:focus,
+.torso .links:hover {
+	border: 1px solid hsl(153deg, 39%, 41%);
+	background-color: hsla(141deg, 45%, 81%, 0.8);
+	-webkit-box-shadow: 0 0 20px hsl(141deg, 45%, 81%),
+		0 0 50px hsla(141deg, 45%, 81%, 0.8), 0 0 80px hsla(141deg, 45%, 81%, 0.5);
+	box-shadow: 0 0 20px hsl(141deg, 45%, 81%),
+		0 0 50px hsla(141deg, 45%, 81%, 0.8), 0 0 80px hsla(141deg, 45%, 81%, 0.5);
+}
+.torso .links:active a,
+.torso .links:focus a,
+.torso .links:hover a {
+	font-size: 1.25rem;
+	visibility: visible;
+	pointer-events: auto;
+	cursor: pointer;
+	-webkit-transition: 0.35s all ease;
+	transition: 0.35s all ease;
+}
+.torso .links:active a:hover,
+.torso .links:focus a:hover,
+.torso .links:hover a:hover {
+	color: hsl(355deg, 78%, 56%);
+}
+
+.hands .img-container {
+	position: relative;
+	max-width: 600px;
+	min-height: 50vh;
+	margin: 0 auto;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+@media (max-width: 600px) {
+	.hands .img-container {
+		background-color: hsla(153deg, 39%, 41%, 0.8);
+	}
+}
+.hands .grid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	gap: 0px 0px;
+}
+
+.form {
+	width: 100%;
+	padding: 0.5rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 1rem;
+}
+.form .form__group {
+	display: grid;
+	padding-bottom: 0.55rem;
+}
+.form .form__control {
+	width: 100%;
+	padding: 0.5rem;
+	border-radius: 0.35rem;
+	background-color: hsl(129deg, 53%, 90%);
+	border: 1px solid hsl(153deg, 39%, 41%);
+	outline: none;
+	-webkit-box-shadow: 2px 2px 5px hsla(0deg, 0%, 0%, 0.3);
+	box-shadow: 2px 2px 5px hsla(0deg, 0%, 0%, 0.3);
+	-webkit-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.form .form__control:focus {
+	border: 1px solid hsl(355deg, 78%, 56%);
+}
+.form label {
+	color: hsl(0deg, 0%, 20%);
+	font-weight: 500;
+	padding-bottom: 0.35rem;
+}
+.form textarea {
+	resize: vertical;
+	min-height: 10vh;
+}
+.form button {
+	background-color: hsl(355deg, 78%, 56%);
+	padding: 0.5rem;
+	border: 0;
+	border-radius: 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	color: hsl(129deg, 53%, 90%);
+	-webkit-box-shadow: 3px 3px 8px hsla(0deg, 0%, 0%, 0.4);
+	box-shadow: 3px 3px 8px hsla(0deg, 0%, 0%, 0.4);
+	-webkit-transition: 0.2s all ease-in-out;
+	transition: 0.2s all ease-in-out;
+}
+.form button:hover {
+	background-color: crimson;
+}
+.form button:disabled {
+	background-color: hsla(355deg, 78%, 56%, 0.5);
+}
+
+.message {
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 1rem;
+	background-color: hsl(0, 0%, 20%);
+	border-left: 3px solid transparent;
+	border-radius: 0.35rem;
+}
+.success {
+	color: hsl(146, 53%, 51%);
+	border-color: hsl(146, 53%, 51%);
+	animation: 5s mess forwards ease;
+}
+.fail {
+	color: crimson;
+	border-color: crimson;
+	animation: 5s mess forwards ease;
+}
+
+@keyframes mess {
+	0% {
+		opacity: 0;
+		transform: translate(-100%, -50%);
+	}
+	20% {
+		opacity: 1;
+		transform: translate(-50%, -50%);
+	}
+	90% {
+		opacity: 1;
+		transform: translate(-50%, -50%);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(-50%, -100%);
+	}
 }

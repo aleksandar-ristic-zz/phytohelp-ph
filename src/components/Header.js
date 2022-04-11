@@ -10,13 +10,13 @@ const Header = () => {
 				</Link>
 				<ul className='row'>
 					<li>
-						<Link to='/'>Preparati</Link>
+						<Link to='/n'>Preparati</Link>
 					</li>
 					<li>
-						<Link to='/'>O nama</Link>
+						<Link to='/about'>O nama</Link>
 					</li>
 					<li>
-						<Link to='/'>Kontakt</Link>
+						<Link to='/contact'>Kontakt</Link>
 					</li>
 				</ul>
 			</div>

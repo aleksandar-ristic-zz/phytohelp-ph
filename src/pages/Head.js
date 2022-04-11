@@ -1,16 +1,10 @@
-import { Link, useNavigate } from 'react-router-dom'
-import { HiOutlineArrowNarrowLeft } from 'react-icons/hi'
+import { Link } from 'react-router-dom'
+import ReturnBtn from '../components/ReturnBtn'
 
 export const Head = () => {
-	const navigate = useNavigate()
 	return (
 		<main className='head container'>
-			<div className='links__controls row'>
-				<div className='return flex-center'>
-					<HiOutlineArrowNarrowLeft onClick={() => navigate(-1)} />
-				</div>
-				<h2>Telo</h2>
-			</div>
+			<ReturnBtn />
 			<div className='flex-center'>
 				<h2>Oblasti Glave</h2>
 				<p>Kliknite na sliku za pretragu anatomske kategorije.</p>

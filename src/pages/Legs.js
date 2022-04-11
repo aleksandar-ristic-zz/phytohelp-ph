@@ -1,17 +1,10 @@
-import React from 'react'
-import { Link, useNavigate } from 'react-router-dom'
-import { HiOutlineArrowNarrowLeft } from 'react-icons/hi'
+import { Link } from 'react-router-dom'
+import ReturnBtn from '../components/ReturnBtn'
 
 export const Legs = () => {
-	const navigate = useNavigate()
 	return (
 		<main className='legs container'>
-			<div className='links__controls row'>
-				<div className='return flex-center' onClick={() => navigate(-1)}>
-					<HiOutlineArrowNarrowLeft />
-				</div>
-				<h2>Telo</h2>
-			</div>
+			<ReturnBtn />
 			<div className='headline flex-center'>
 				<h2>Oblasti Noge</h2>
 				<p>Kliknite na sliku za pretragu anatomske kategorije.</p>
@@ -24,7 +17,7 @@ export const Legs = () => {
 				<div className='empty-l'></div>
 				<div className='empty-r'></div>
 
-				<Link className='tooltip thigh' title='Butina' to='/n'></Link>
+				<Link className='tooltip thigh' title='Butina' to='/noge/butine'></Link>
 				<Link className='tooltip knee' title='Koleno' to='/n'></Link>
 				<Link className='tooltip feet' title='Stopalo' to='/noge/zglob'></Link>
 			</div>

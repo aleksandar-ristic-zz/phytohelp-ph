@@ -5,7 +5,7 @@ export const Home = () => {
 	const [isHidden, setIsHidden] = useState(false)
 	return (
 		<main className='home container'>
-			<div className='flex-center'>
+			<div className='headline flex-center'>
 				<h2>Anatomska pretraga</h2>
 				<p>Kliknite na sliku za pretragu anatomske kategorije.</p>
 			</div>
@@ -18,6 +18,11 @@ export const Home = () => {
 					style={{ backgroundImage: 'url(/img/doctor.png)' }}
 					onClick={() => setIsHidden(true)}
 				></div>
+
+				<div className='links'>
+					<Link to='/imunitet/imunitet'>Imunitet</Link>
+					<Link to='/kosti/kosti'>Skelet</Link>
+				</div>
 
 				<div className='empty-l'></div>
 				<div className='empty-r'></div>
@@ -38,10 +43,10 @@ export const Home = () => {
 					aria-label='Leva Ruka'
 				></Link>
 				<Link
-					to='/grudi'
-					title='Grudi'
+					to='/torzo'
+					title='Torzo'
 					className='chest tooltip'
-					aria-label='Grudi'
+					aria-label='Torzo'
 				></Link>
 				<Link
 					to='/ruka'
