@@ -416,7 +416,7 @@ const body = {
 						purpose:
 							'redovnu higijenu usne duplje i održavanje zdravlja desni,ublažavanje tegoba kod oboljenja desni, grla i ždrela,tretman zapaljenja desni (gingivitis, parodontopatija), usne duplje (stomatitis, afte), krajnika (tonzilitis), grla (faringitis) neutralizaciju neprijatnog zadaha,osobe koje nose protetičke nadoknade i posle stomatoloških intervencija.',
 						effects:
-							': Razblaženim rastvorom ispirati usnu duplju ili grlo tri puta dnevno.'
+							'Razblaženim rastvorom ispirati usnu duplju ili grlo tri puta dnevno.'
 					}
 				]
 			},

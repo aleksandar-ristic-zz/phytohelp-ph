@@ -41,13 +41,7 @@ export const Product = () => {
 								<h3 className='row'>
 									Namena <FaHeartbeat />
 								</h3>
-								<p>
-									Deluje aktivno i pouzdano protiv uzroka i simptoma akutnog,
-									subakutnog i hroničnog zapaljenja paranazalnih sinusa i
-									rinitisa.Dolazi do prestajanja bola I pritiska u
-									glavi,omogućava normalno disanje,podstiče I olakšava
-									pražnjenje sekreta I otklanja zapaljenje I otok.
-								</p>
+								<p>{productData.purpose}</p>
 							</div>
 						)}
 
@@ -57,15 +51,7 @@ export const Product = () => {
 									Dejstvo
 									<FaSyringe />
 								</h3>
-								<p>
-									'Preparat ima protivupalno, antibakterijsko, protivgljivično,
-									antivirusno, analgetsko i ekpektoransno dejstvo. Blagotvorno
-									deluje na sluzokožu sinusa, otklanja zapaljenje i otok, otvara
-									prolaze izmedju sinusnih supljina i tako otklanja blokadu
-									otvora sinusa; podstiče pravilan rad cilija koji uklanjaju
-									polutante i neželjeni sadržaj iz obolelih sinusa i nosa,
-									podstče i olakšava pražnjenje sekreta iz sinusa i nosa.'
-								</p>
+								<p>{productData.effects}</p>
 							</div>
 						)}
 
@@ -74,7 +60,7 @@ export const Product = () => {
 								<h3 className='row'>
 									Ograničenja <FaSkullCrossbones />
 								</h3>
-								<p>Ne smeju odrasli i deca preko 6 godina.</p>
+								<p>{productData.limits}</p>
 							</div>
 						)}
 					</div>
