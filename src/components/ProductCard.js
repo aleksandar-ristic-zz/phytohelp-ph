@@ -3,8 +3,8 @@ import { HiOutlineArrowNarrowRight } from 'react-icons/hi'
 
 const ProductCard = ({
 	name,
-	purpose = 'Proverite desjtvo leka klikom na link.',
-	image = 'default.png',
+	purpose = 'Proverite dejstvo leka klikom na link.',
+	image,
 	link,
 	path
 }) => {
@@ -27,7 +27,11 @@ const ProductCard = ({
 
 			<div className='product__right'>
 				<div className='img__wrapper'>
-					<img src={`${path}${image}`} alt={name} />
+					{image ? (
+						<img src={`${path}${image}`} alt={name} />
+					) : (
+						<img src='/img/default.png' alt={name} />
+					)}
 				</div>
 			</div>
 		</div>

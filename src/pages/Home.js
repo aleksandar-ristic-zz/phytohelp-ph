@@ -19,7 +19,8 @@ export const Home = () => {
 					onClick={() => setIsHidden(true)}
 				></div>
 
-				<div className='links'>
+				<div className='body__links'>
+					<Link to='/masa/masa'>Telesna Masa</Link>
 					<Link to='/imunitet/imunitet'>Imunitet</Link>
 					<Link to='/kosti/kosti'>Skelet</Link>
 				</div>

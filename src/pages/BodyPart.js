@@ -39,7 +39,7 @@ export const BodyPart = () => {
 			<div className='products__container'>
 				<div className='product__headline'>
 					<h2>{bodyData.name}</h2>
-					<p>Uobičajeno lečenje {bodyData.desc}</p>
+					<p>{bodyData.desc}</p>
 				</div>
 
 				<div className='img__container'>
@@ -65,7 +65,7 @@ export const BodyPart = () => {
 				<div className='flex-center search-container'>
 					<div className={isOpen ? 'show' : ''}>
 						<label className='offscreen' htmlFor='search'>
-							Pretražite delove tela ili preparate
+							Pretražite preparate po nazivu
 						</label>
 						<input
 							ref={searchRef}

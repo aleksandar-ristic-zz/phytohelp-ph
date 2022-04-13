@@ -17,13 +17,27 @@ export const Head = () => {
 				<div className='empty-l'></div>
 				<div className='empty-r'></div>
 
-				<Link className='tooltip upper' title='čelo' to='/glava/čelo'></Link>
 				<Link
-					className='tooltip sinus'
-					title='sinusi'
-					to='/glava/sinusi'
+					tabIndex='1'
+					className='tooltip upper'
+					title='Čelo'
+					to='/glava/čelo'
 				></Link>
-				<Link className='tooltip teeth' title='zubi' to='/glava/zubi'></Link>
+				<div tabIndex='1' className='links flex-center sinus'>
+					<Link className='tooltip' title='Oči' to='/glava/oči'>
+						Oči
+					</Link>
+					<Link className='tooltip' title='Sinusi' to='/glava/sinusi'>
+						Sinusi
+					</Link>
+				</div>
+
+				<Link
+					tabIndex='1'
+					className='tooltip teeth'
+					title='Zubi'
+					to='/glava/zubi'
+				></Link>
 			</div>
 		</main>
 	)

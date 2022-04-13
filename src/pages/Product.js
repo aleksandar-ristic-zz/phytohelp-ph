@@ -25,7 +25,7 @@ export const Product = () => {
 							alt={productData.name}
 						/>
 					) : (
-						<img src={`/img/${body}/default.png`} alt={productData.name} />
+						<img src={`/img/default.png`} alt={productData.name} />
 					)}
 				</div>
 

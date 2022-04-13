@@ -18,7 +18,7 @@ export const Legs = () => {
 				<div className='empty-r'></div>
 
 				<Link className='tooltip thigh' title='Butina' to='/noge/butine'></Link>
-				<Link className='tooltip knee' title='Koleno' to='/n'></Link>
+				<Link className='tooltip knee' title='Koleno' to='/noge/zglob'></Link>
 				<Link className='tooltip feet' title='Stopalo' to='/noge/zglob'></Link>
 			</div>
 		</main>

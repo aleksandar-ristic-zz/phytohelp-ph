@@ -31,9 +31,9 @@ const App = () => {
 				<Route path='/noge' element={<Legs />} />
 				<Route path='/:body/:bodyPart' element={<BodyPart />} />
 				<Route path='/:body/:bodyPart/:index' element={<Product />} />
-				<Route path='/search-products' element={<SearchProducts />} />
-				<Route path='/contact' element={<Contact />} />
-				<Route path='/about' element={<About />} />
+				<Route path='/pretraga' element={<SearchProducts />} />
+				<Route path='/kontakt' element={<Contact />} />
+				<Route path='/onama' element={<About />} />
 				<Route path='*' element={<NotFound />} />
 			</Routes>
 		</>

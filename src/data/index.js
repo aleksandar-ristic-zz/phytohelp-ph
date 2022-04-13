@@ -1,14 +1,14 @@
 const body = {
 	glava: {
-		id: 1,
+		id: 'glava',
 		name: 'Glava',
 		desc: 'Glava',
 		image: 'head.png',
 		parts: {
 			čelo: {
-				id: 1,
+				id: 'čelo',
 				name: 'Glavobolja',
-				desc: 'Glavobolja',
+				desc: 'protiv glavobolje',
 				image: 'headache.png',
 				products: [
 					{
@@ -35,11 +35,12 @@ const body = {
 						id: 3,
 						name: 'Kora Vrbe',
 						desc: 'čaj',
+						image: 'kora-vrbe.png',
 						purpose:
-							'za preznojavanje - kod povišene telesne temperature, kod prehlade i gripa, za ublažavanje reumatskih bolova, kod glavobolje i migrene. Za spoljnu upotrebu, ispiranje čajem od kore vrbe preporučuje se za ubrzanje zarastanja rana.',
+							'Za preznojavanje - kod povišene telesne temperature, kod prehlade i gripa, za ublažavanje reumatskih bolova, kod glavobolje i migrene. Za spoljnu upotrebu, ispiranje čajem od kore vrbe preporučuje se za ubrzanje zarastanja rana.',
 						effects: '',
 						limits:
-							'Upotreba Čaja od kore vrbe se ne preporučuje tokom trudnoće i dojenja kao ni deci mlađoj od 12 godina.'
+							'Upotreba čaja od kore vrbe se ne preporučuje tokom trudnoće i dojenja kao ni deci mlađoj od 12 godina.'
 					},
 					{
 						id: 4,
@@ -47,7 +48,7 @@ const body = {
 						desc: 'Čaj',
 						image: 'glog.png',
 						purpose:
-							'i ekstrakti gloga imaju blagotvorno dejstvo na cirkulaciju i ublažavanje nervne napetosti, tako da se njihova upotreba preporučuje kod migrena i glavobolja uzrokovanih stresom.'
+							'Cvet i ekstrakti gloga imaju blagotvorno dejstvo na cirkulaciju i ublažavanje nervne napetosti, tako da se njihova upotreba preporučuje kod migrena i glavobolja uzrokovanih stresom.'
 					},
 					{
 						id: 5,
@@ -55,7 +56,7 @@ const body = {
 						desc: 'Čaj',
 						image: 'zelenicaj.png',
 						purpose:
-							'uz visoki sadržaj anti-oksidanasa sadrži tein, jedinjenje koje blagotvorno deluje na ublažavanje varijacija u vazokonstrikciji i vazodilataciji krvnih sudova tokom migrenoznog napada, i njegova upotreba je najdelotvornija ukoliko se primeni što pre, pri pojavi prvih simptoma'
+							'Uz visoki sadržaj anti-oksidanasa sadrži tein, jedinjenje koje blagotvorno deluje na ublažavanje varijacija u vazokonstrikciji i vazodilataciji krvnih sudova tokom migrenoznog napada, i njegova upotreba je najdelotvornija ukoliko se primeni što pre, pri pojavi prvih simptoma'
 					},
 					{
 						id: 6,
@@ -63,7 +64,7 @@ const body = {
 						desc: 'Čaj',
 						image: 'nana.png',
 						effects:
-							'pomaže ublažavanju grčeva i olakšava varenje tako da se njegova upotreba preporučuje u slučajevima kada je okidač pojave napada problem u varenju određenih namirnica.'
+							'Pomaže ublažavanju grčeva i olakšava varenje tako da se njegova upotreba preporučuje u slučajevima kada je okidač pojave napada problem u varenju određenih namirnica.'
 					},
 					{
 						id: 7,
@@ -71,18 +72,18 @@ const body = {
 						desc: 'Čaj',
 						image: 'articoka.png',
 						effects:
-							'povoljno deluju na funkcije jetre i lučenje žuči, olakšanje varenja i regulisanje stolice, što može pomoći prevazilaženju opstipacije kao uzroka pojave migrene'
+							'Povoljno deluju na funkcije jetre i lučenje žuči, olakšanje varenja i regulisanje stolice, što može pomoći prevazilaženju opstipacije kao uzroka pojave migrene'
 					}
 				]
 			},
 			sinusi: {
-				id: 2,
-				name: 'Gornji disajni putevi',
-				desc: 'zapušen nos, bol u grlu, promuklost i kašalj',
+				id: 'sinusi',
+				name: 'Sinusi',
+				desc: 'Gornji disajni putevi',
 				image: 'sinusache.png',
 				products: [
 					{
-						id: 1,
+						id: 8,
 						name: 'Žalfija',
 						desc: 'Etarsko ulje',
 						image: 'zalfija.png',
@@ -92,7 +93,7 @@ const body = {
 							'Otklanja glavobolju i olakšava disanje kod infekcija disajnih puteva.'
 					},
 					{
-						id: 2,
+						id: 9,
 						name: 'Pitoma nana',
 						desc: 'Etarsko ulje',
 						image: 'nana.png',
@@ -101,7 +102,7 @@ const body = {
 							'Pored toga, pozitivno utiče i na ublažavanje simptoma infekcija gornjih disajnih puteva, kao što su kašalj ili bolno grlo.'
 					},
 					{
-						id: 3,
+						id: 10,
 						name: 'Ekosept',
 						desc: 'Fitopreparat',
 						image: 'ekosept.png',
@@ -109,7 +110,7 @@ const body = {
 							'Koji sadrži etarsko ulje žalfije I pitomene nane.Koristi se u toku infekcija gornjih disajnih puteva,u toku infekcije sluzokože usne duplje I desni, kod iritacija izazvanih nošenjem ortodonskog aparata ili proteze i proteze I kod pušača za regulisanje bakterijske flore I osvežavanja daha.'
 					},
 					{
-						id: 4,
+						id: 11,
 						name: 'Propolis C-100',
 						desc: 'Tablete',
 						image: 'propolis.png',
@@ -117,7 +118,7 @@ const body = {
 							'Jedinstven proizvod, jer u sebi sadrže čak 35mg ekstrakta propolisa. Koristi se u toku infekcija gornjih disajnih puteva, izazvanih virusima ili gram pozitivnim bakterijama kao što su upala ždrela, krajnika ili glasnih žica, u toku infekcija usne duplje izazvanih virusom herpes I kod bola u grlu.'
 					},
 					{
-						id: 5,
+						id: 12,
 						name: 'Altiprim P',
 						desc: 'Sirup',
 						image: 'altiprim.png',
@@ -127,7 +128,7 @@ const body = {
 							'Ovi sastojci blagotvorno deluju na sluzokožu disajnih organa i štite je od nadražaja, razređuju gusti bronhijalni sekret, pospešuju izlučivanje sluzi iz bronhija i olakšavaju disanje i iskašljavanje.'
 					},
 					{
-						id: 6,
+						id: 13,
 						name: 'PROPOHERB N',
 						desc: 'Sprej',
 						image: 'propoherbn.png',
@@ -138,27 +139,27 @@ const body = {
 						limits: 'Ne preporučuje se deci mlađoj od 6 godina.'
 					},
 					{
-						id: 7,
+						id: 14,
 						name: 'Bronhocea',
 						desc: 'Prašak za oralni rastvor',
 						image: 'bronhocea.png',
 						purpose:
-							'pomaže u ublažavanju simptoma gripa i prehlade kao što su: kašalj, problemi sa disanjem, bol u grlu , povišena temperatura Zahvaljujući pažljivo odabranim sastojcima.',
+							'Pomaže u ublažavanju simptoma gripa i prehlade kao što su: kašalj, problemi sa disanjem, bol u grlu , povišena temperatura Zahvaljujući pažljivo odabranim sastojcima.',
 						effects:
-							'obezbeđuje normalno funkcionisanje gornjeg respiratornog sistema- smanjuje iritaciju grla i usne duplje- pomaže u održavanju normalne telesne temperature tela- održava normalno stanje pluća i bronhija- jača odbrambenu snagu organizma.'
+							'Obezbeđuje normalno funkcionisanje gornjeg respiratornog sistema- smanjuje iritaciju grla i usne duplje- pomaže u održavanju normalne telesne temperature tela- održava normalno stanje pluća i bronhija- jača odbrambenu snagu organizma.'
 					},
 					{
-						id: 8,
+						id: 15,
 						name: 'Bronholah',
 						desc: 'Gel',
 						image: 'bronholah.png',
 						purpose:
-							'predstavlja kombinaciju pažljivo odabranih etarskih ulja, koja putem inhalacije pomaže u smirivanju simptoma alergijskog rinitisa.',
+							'Predstavlja kombinaciju pažljivo odabranih etarskih ulja, koja putem inhalacije pomaže u smirivanju simptoma alergijskog rinitisa.',
 						effects:
-							'zahvaljujući svojim sledećim svojstvima: Etarsko ulje limuna , Etarsko ulje lavande, Etarsko ulje nane, Etarsko ulje eukaliptusa. Gel se u tankom sloju nanosi ispod nosa, na kožu slepoočnica i iza uha ili se rastrlja među dlanovima i udiše.'
+							'Zahvaljujući svojim sledećim svojstvima: Etarsko ulje limuna , Etarsko ulje lavande, Etarsko ulje nane, Etarsko ulje eukaliptusa. Gel se u tankom sloju nanosi ispod nosa, na kožu slepoočnica i iza uha ili se rastrlja među dlanovima i udiše.'
 					},
 					{
-						id: 9,
+						id: 16,
 						name: 'Echianid',
 						desc: 'Sprej za grlo',
 						image: 'echianid.png',
@@ -170,19 +171,19 @@ const body = {
 							'Ne sadrži alkohol. Pogodan za odrasle i decu stariju od 12 godina'
 					},
 					{
-						id: 10,
+						id: 17,
 						name: 'PropoMucil PHYSIO',
 						desc: 'Fiziološki rastvor',
 						image: 'propomucil.png',
 						purpose:
-							'rastvor sadrži propolis, N-acetilcistein, etarska ulja eukaliptusa i nane.',
+							'Rastvor sadrži propolis, N-acetilcistein, etarska ulja eukaliptusa i nane.',
 						effects:
 							'Poboljšava prohodnost nosa i ublažava tegobe gornjih disajnih puteva. Potrebno je naprskati u nosnu šupljinu više puta u toku dana, po potrebi.',
 						limits:
 							'PropoMucil Physio hypertonic se preporučuje odraslima i deci od 3. godine za svakodnevnu upotrebu.'
 					},
 					{
-						id: 11,
+						id: 18,
 						name: 'Pulmint',
 						desc: 'Inhalator za nos',
 						image: 'pulmint.png',
@@ -192,7 +193,7 @@ const body = {
 							'Mentol deluje kao moćan antiseptik, dok se ulje eukaliptusa bori sa bakterijama i virusima na nivou nosne šupljine i sprečava da ovi infektivni agensi prodru dublje u disajne puteve'
 					},
 					{
-						id: 12,
+						id: 19,
 						name: 'Rhinosinn',
 						desc: 'Inhalator za nos',
 						image: 'rhinosinn.png',
@@ -202,18 +203,18 @@ const body = {
 							'Sadrži etarska ulja i tinkture šest različitih biljaka čiji aktivni principi imaju dokazanu efikasnost kroz brojne studije, a njihovo delovanje se ispoljava kroz sledeće efekte koje postižu u sinergiji:  Smanjuju zapušenost nosa  Sprečavaju rast i razvoj patogena. Stimulišu regeneraciju sluzokože nosa.'
 					},
 					{
-						id: 13,
+						id: 20,
 						name: 'Hysan Baby',
 						desc: 'Kapi za nos',
 						image: 'hysan.png',
 						purpose:
-							'ima dvostruko dejstvo: formira dugotrajan i stabilan zaštitni film na sluzokoži i ima visok kapacitet vezivanja vode. Hysan baby je sterilan, izotonični rastvor koji ne sadrži konzervans ni potisni gas.',
+							'Hysan baby je sterilan, izotonični rastvor koji ne sadrži konzervans ni potisni gas.',
 						effects:
-							'ima dvostruko dejstvo: formira dugotrajan i stabilan zaštitni film na sluzokoži i ima visok kapacitet vezivanja vode.',
+							'Ima dvostruko dejstvo: formira dugotrajan i stabilan zaštitni film na sluzokoži i ima visok kapacitet vezivanja vode.',
 						limits: 'Rastvor je sterilan 6 meseci nakon otvaranja.'
 					},
 					{
-						id: 14,
+						id: 21,
 						name: 'Marisol Isotonic 50ml',
 						desc: 'Sprej za nos',
 						image: 'marisol.png',
@@ -223,16 +224,16 @@ const body = {
 							'Marisol isotonic rastvor vraća sluzokoži nosa njenu prirodnu vlažnost, sposobnost samoprečišćavanja i normalne produkcije sluzi koja je štiti od isušivanja i mehaničkih nadražaja.'
 					},
 					{
-						id: 15,
+						id: 22,
 						name: 'Nisita®',
 						desc: 'Mast za nos',
 						image: 'nisita.png',
 						purpose:
-							'mast za nos se primenjuje kod suve sluznice nosa, kao dodatno lečenje kod zapušenog nosa, npr. kod obične prehlade, za čiščenje i vlaženje sluznice nosa, npr. suv vazduh u prostoriji, za lečenje krastica u nosu.',
+							'Mast za nos se primenjuje kod suve sluznice nosa, kao dodatno lečenje kod zapušenog nosa, npr. kod obične prehlade, za čiščenje i vlaženje sluznice nosa, npr. suv vazduh u prostoriji, za lečenje krastica u nosu.',
 						limits: 'Nisita mast za nos mogu koristiti odrasli, deca i odojčad.'
 					},
 					{
-						id: 16,
+						id: 23,
 						name: 'PROPOHERB G',
 						desc: 'Sprej za grlo',
 						image: 'propoherb.png',
@@ -244,31 +245,31 @@ const body = {
 							'Ne preporučuje se deci mlađoj od 6 godina. Preparat sadrži alkohol. Ne upotrebljavati duže od dve nedelje u kontinuitetu.'
 					},
 					{
-						id: 17,
+						id: 24,
 						name: 'Apis Gola',
 						desc: 'Sprej za grlo',
 						image: 'apis.png',
 						purpose:
-							'sprej za grlo brzo i efikasno smanjuje crvenilo sluzokože grla, bol, grebanje otežano gutanje a ukoliko su prisutne Afte ubrzava njihovo zarastanje.',
+							'Sprej za grlo brzo i efikasno smanjuje crvenilo sluzokože grla, bol, grebanje otežano gutanje a ukoliko su prisutne Afte ubrzava njihovo zarastanje.',
 						effects:
 							'Takodje sprečava rast bakterija i gljivica u usnoj duplji.',
 						limits:
 							'Pre upotrebe promućkati !Za uzrast od 1-4 godine 3x dnevno.Za uzrast od 4-12 godina 4x dnevno.'
 					},
 					{
-						id: 18,
+						id: 25,
 						name: 'Phytovirin',
 						desc: 'Pastile',
 						image: 'phytovirin.png',
 						purpose:
-							'svojom specifičnom formulacijom oblažu usnu duplju i stvaraju prirodni zaštitni film koji blokira ulazak patogena, virusa i bakterija u organizam.',
+							'Svojom specifičnom formulacijom oblažu usnu duplju i stvaraju prirodni zaštitni film koji blokira ulazak patogena, virusa i bakterija u organizam.',
 						effects:
-							'pastile štite organizam od virusa i bakterija, održavaju zdravlje bronhija i respiratornog trakta, podržavaju prirodnu odbranu organizma, pomažu u ublažavanju bola u grlu, doprinose smanjenju umora.',
+							'Pastile štite organizam od virusa i bakterija, održavaju zdravlje bronhija i respiratornog trakta, podržavaju prirodnu odbranu organizma, pomažu u ublažavanju bola u grlu, doprinose smanjenju umora.',
 						limits:
 							'Odrasli: 1 pastila 6 puta dnevno, polako rastopiti u ustima. Deca starija od 12 godina : 1 pastila 2 puta dnevno, polako rastopiti u ustima.'
 					},
 					{
-						id: 19,
+						id: 26,
 						name: 'beli slez',
 						desc: 'čaj',
 						image: 'slez.png',
@@ -276,76 +277,77 @@ const body = {
 							'Koristi se kao sredstvo za ublažavanje nadražaja na kašalj, za ispiranja kod zapaljenja sluznica gornjih delova organa za disanje, kod katara želudca i creva, a spolja kao oblog kod zapaljenja i opekotina na koži.'
 					},
 					{
-						id: 20,
-						name: 'Dr.Theiss žalfija i bokvica',
-						desc: 'pastille',
-						image: 'drtheiss.png',
+						id: 27,
+						name: 'Žalfija i bokvica',
+						desc: 'pastile',
+						image: 'herbalsept.png',
 						purpose:
 							'Ublažavaju tegobe koje prate upalu sluznice usta i grla.Kod nadražaja gornjih disajnih puteva.',
 						effects:
 							'Ubrzavaju regeneraciju oštećene ili obolele sluzokože. Sperečavaju nastanak superinfekcija (kod afti, gingivostomatitisa).'
 					},
 					{
-						id: 21,
+						id: 28,
 						name: 'Herboral',
 						desc: 'sirup',
 						image: 'herboral.png',
 						purpose:
-							'kod kašlja praćenog prehladom i gripom,kod upale grla i hroničnog bronhitisa,u tretmanu prehlade i gripa. ',
+							'Kod kašlja praćenog prehladom i gripom,kod upale grla i hroničnog bronhitisa,u tretmanu prehlade i gripa. ',
 						effects:
-							'kod održavanja pravilne funkcije respiratornog traktaza, lakše iskašljavanje sekretakod iritacije grla praćene produktivnim kašljem',
+							'Kod održavanja pravilne funkcije respiratornog traktaza, lakše iskašljavanje sekretakod iritacije grla praćene produktivnim kašljem',
 						limits:
 							'Odrasli i deca starija od 12 godina: 3 puta dnevno 15ml.Deca od 4 do 12 godina: 3 puta dnevno 5ml.Napomena: sirup se uzima posle jela.'
 					},
 					{
-						id: 22,
+						id: 29,
 						name: 'Mucoplant',
-						desc: 'sirup za laku noc',
+						desc: 'sirup',
+						image: 'mucoplant.png',
 						purpose:
-							'Dr. Theiss-ov Mucoplant  Good night sirup za laku noć sadrži mešavinu ekstrakta biljaka, pa pored uskolisne bokvice sadrži kamilicu, matičnjak i majčinu dušicu, biljke koje se tradicionalno koriste za ublažavanje nelagode u disajnim putevima.',
+							'Dr. Theiss-ov Mucoplant Good night sirup za laku noć sadrži mešavinu ekstrakta biljaka, pa pored uskolisne bokvice sadrži kamilicu, matičnjak i majčinu dušicu, biljke koje se tradicionalno koriste za ublažavanje nelagode u disajnim putevima.',
 						effects:
 							'Posebno se preporučuje osobama sa osetljivim disajnim putevima, kod kašlja praćenog obimnim stavarnjem sekreta jer može doprineti pravilnom funkcionisanju i umanjenju nadražaja na kašalj, bez ometanja prirodnog eliminisanja sekreta, što doprinosi kvalitetnom odmoru tokom noći.'
 					},
 					{
-						id: 23,
+						id: 30,
 						name: 'Bronhoklir',
 						desc: 'sirup',
 						image: 'bronhoklir.png',
 						purpose:
-							'sirup bršljan sadrži ekstrat lista bršljana koji razređuje sluz koja se nakuplja u disajnim putevima smanjuje neprijatne nadražaje grla i pomaže opuštanju glatkih mišićnih struktura u disajnim putevima i takoolakšava proces iskašljavanja.',
+							'Sirup bršljan sadrži ekstrat lista bršljana koji razređuje sluz koja se nakuplja u disajnim putevima smanjuje neprijatne nadražaje grla i pomaže opuštanju glatkih mišićnih struktura u disajnim putevima i takoolakšava proces iskašljavanja.',
 						limits:
 							'Predstavlja pomoć kod suvog i produktivnog kašlja. Ne sadrži šećer i mogu ga koristiti i dijabetičari'
 					},
 					{
-						id: 24,
+						id: 31,
 						name: 'Beba C',
 						desc: 'sirup',
 						image: 'bebac.png',
 						purpose:
-							'beli slez sa vitaminom C je dijetetski proizvod namenjen za održavanje zdravlja respiratornih organa.',
+							'Beli slez sa vitaminom C je dijetetski proizvod namenjen za održavanje zdravlja respiratornih organa.',
 						effects:
 							'Beli slez ima umirujuće i prijatno dejstvo na grlo, ždrelo i glasne žice. Pruža olakšanje u slučaju nadražaja/iritacije grla, ždrela i glasnih žica.Tradicionalno, beli slez se koristi u tretmanu suvog i nadražajnog kašlja.'
 					}
 				]
 			},
 			zubi: {
-				id: 3,
-				name: 'Zubi',
-				desc: 'Zubobolja',
+				id: 'zubi',
+				name: 'Zubobolja',
+				desc: 'Preparati i lečenje',
 				image: 'toothache.png',
 				products: [
 					{
-						id: 1,
+						id: 32,
 						name: 'Aloe Fresh',
 						desc: 'Sprej za osvežavanje daha',
 						image: 'aloefresh.png',
 						purpose:
-							'sprečava razvoj bakterija u usnoj duplji zahvaljujući jedinstvenom sastavu.',
+							'Sprečava razvoj bakterija u usnoj duplji zahvaljujući jedinstvenom sastavu.',
 						effects:
 							'Sadrži aloju, eterično ulje ulja čajevca, ekstrakt semena grejpfrutai kitosan deluje antiseptik i ima antiinflamatorno dejstvo i može preporučiti i za ublažavanje tegoba kod pojave čireva u ustima, upale desni i bolova u grlu.'
 					},
 					{
-						id: 2,
+						id: 33,
 						name: 'Dologel',
 						desc: 'Gel za desni',
 						image: 'dologel.png',
@@ -355,7 +357,7 @@ const body = {
 							'Zahvaljujući prirodnim sastojcima, nežan je za stomak i može se koristiti u neograničenim količinama.'
 					},
 					{
-						id: 3,
+						id: 34,
 						name: 'Mediflora',
 						desc: 'biljne kapi',
 						image: 'mediflora.png',
@@ -367,17 +369,17 @@ const body = {
 							'Način čuvanja: Na sobnoj temperaturi i tamnom mestu, izvan domašaja dece.'
 					},
 					{
-						id: 4,
+						id: 35,
 						name: 'Herbalsept',
 						desc: 'Gel',
 						image: 'herbalsept.png',
 						purpose:
-							'gel sa hijaluronskom kiselinom protiv zubobolje i za negu desni sadrži ekstrakt kamilice, etarska ulja nane i karanfilića, i hijaluronsku kiselinu.',
+							'Gel sa hijaluronskom kiselinom protiv zubobolje i za negu desni sadrži ekstrakt kamilice, etarska ulja nane i karanfilića, i hijaluronsku kiselinu.',
 						effects:
 							'Gel je formulisan tako da na veoma brz i efikasan način ukloni zubobolju, bez obzira na uzrok njene pojave (zubobolja kao posledica karijesa ili oboljenja desni, zubobolja nastala usled izbijanja ili povrede zuba, bol u zubima kao reakcija na različite termičke, hemijske i mehaničke nadražaje).'
 					},
 					{
-						id: 5,
+						id: 36,
 						name: 'Tinctura Paradentoica',
 						desc: 'Kapi za jačanje desni ',
 						image: 'tinctura.png',
@@ -387,82 +389,87 @@ const body = {
 							'Zahvaljujući svom kompleksnom sastavu preparat ispoljava adstrigentno, antiseptično, antiinflamatorno, blago anestetično i hemostatično dejstvo.'
 					},
 					{
-						id: 6,
+						id: 37,
 						name: 'Gingival',
 						desc: 'Gel za masažu desni',
 						image: 'gingival.png',
 						purpose:
-							'kao pomoćno sredstvo za održavanje i podržavanje rezultata koje je postigao stomatolog, sprovodeći standarnu terapiju kod pacijenata sa izraženim znacima zapaljenja desni, nastalih zbog gingivitisa, paradontopatije, naslaga kamenca i drugih uzročnika.',
+							'Kao pomoćno sredstvo za održavanje i podržavanje rezultata koje je postigao stomatolog, sprovodeći standarnu terapiju kod pacijenata sa izraženim znacima zapaljenja desni, nastalih zbog gingivitisa, paradontopatije, naslaga kamenca i drugih uzročnika.',
 						effects:
 							'Pre svakog nanošenja Gingival gela, zube treba dobro oprati četkicom i pastom za zube. Istisnuti oko 0,5 cm gela na jagodicu prsta i blagim kružnim pokretima nanositi na i okolo desni sa spoljašnje strane, lagano ih masirati; isto ponoviti sa unutrašnje strane desni.Nakon nanošenja gela jedan sat ne uzimati hranu ni tečnost kako bi gel ostvario dejstvo.',
 						limits:
 							'GINGIVAL gel se koristi dva do tri puta dnevno, najkraće 7 dana.'
 					},
 					{
-						id: 7,
+						id: 38,
 						name: 'Dentinol',
 						desc: 'Kapi',
 						image: 'dentinol.png',
 						purpose:
-							'služe prvenstveno za kratkotrajno i privremeno smirivanje upale i bolova zuba, desni i sluzokože usne duplje, a ne za njihovo lečenje.',
+							'Služe prvenstveno za kratkotrajno i privremeno smirivanje upale i bolova zuba, desni i sluzokože usne duplje, a ne za njihovo lečenje.',
 						effects:
 							'Poseduju antiseptičko, baktericidno, adstrigentno, anestetičko i antiflogističko dejstvo.'
 					},
 					{
-						id: 8,
+						id: 39,
 						name: 'Ozosept',
 						desc: 'koncentrovani rastvor',
 						image: 'ozosept.png',
 						purpose:
-							'redovnu higijenu usne duplje i održavanje zdravlja desni,ublažavanje tegoba kod oboljenja desni, grla i ždrela,tretman zapaljenja desni (gingivitis, parodontopatija), usne duplje (stomatitis, afte), krajnika (tonzilitis), grla (faringitis) neutralizaciju neprijatnog zadaha,osobe koje nose protetičke nadoknade i posle stomatoloških intervencija.',
+							'Redovnu higijenu usne duplje i održavanje zdravlja desni,ublažavanje tegoba kod oboljenja desni, grla i ždrela,tretman zapaljenja desni (gingivitis, parodontopatija), usne duplje (stomatitis, afte), krajnika (tonzilitis), grla (faringitis) neutralizaciju neprijatnog zadaha,osobe koje nose protetičke nadoknade i posle stomatoloških intervencija.',
 						effects:
 							'Razblaženim rastvorom ispirati usnu duplju ili grlo tri puta dnevno.'
 					}
 				]
 			},
 			oči: {
-				id: 4,
+				id: 'oči',
 				name: 'Oči',
-				desc: 'Oči',
+				desc: 'Preparati i lečenje očiju',
+				image: 'eyes.png',
 				products: [
 					{
-						id: 1,
+						id: 40,
 						name: 'Proculin Plus',
 						desc: 'Kapsule',
+						image: 'proculin-plus.png',
 						purpose:
 							'sadrže kompleks sastojaka neophodnih za očuvanje vida i zaštitu očiju od štetnog dejstva takozvanih slobodnih radikala. Ksantofilni pigmenti lutein i zeaksantin igraju važnu ulogu u održanju funkcije retine.',
 						effects:
 							'Visoko koncentrovano i prečišćeno riblje ulje (obogaćeno optimalnom koncentracijom DHA) doprinosi održavanju normalnog vida. Vitamini i minerali doprinose zaštiti očiju od štetnog dejstva slobodnix radikala i pomažu očuvanju vida.'
 					},
 					{
-						id: 2,
+						id: 41,
 						name: 'Vitrex',
 						desc: 'Dodatak ishrani',
 						purpose:
 							'Namenjen za potrebe ishrane kod degeneracije staklastog tela. Vitrex poboljšava metabolizam staklastog tela i vraća ga u fiziološko stanje - postepeno se povlače leteće mušice.'
 					},
 					{
-						id: 3,
+						id: 42,
 						name: 'AretIN',
 						desc: 'Kapsule',
+						image: 'aretin.png',
 						purpose:
 							'Proizvod koji je namenjen očuvanju i unapređenu zdravlja oka, pre svega kod pacijenata obolelih od dijabetesa.',
 						effects:
 							'Može se primenjivati i kod drugih stanja koje pogađaju oko u čijem razvoju učestvuju okidativni stres ili upalni procesi.'
 					},
 					{
-						id: 4,
-						name: 'Vitamix',
+						id: 43,
+						name: 'Vitamix 50',
 						desc: 'Kapsule',
+						image: 'vitamix.png',
 						purpose:
 							'Jedinstveno formulisani preparat za održavanje zdravlja očiju i dobar vid.',
 						effects:
 							'Predstavlja kombinaciju visokog sadržaja ključnih antioksidanasa luteina, zeaksantina i astaksantina koji su od značaja za očuvanje normalne funkcije oka i za kvalitet očnog pigmenta. Njihovo dejstvo pojačano je dodatkom vitamina E i beta karotena.'
 					},
 					{
-						id: 5,
+						id: 44,
 						name: 'OptiNerve ',
 						desc: 'Kapsule',
+						image: 'optinerve.png',
 						purpose:
 							'Dijetetski suplement sa neuroprotektivnim dejstvom namenjen osobama koje boluju od glaukoma.',
 						effects:
@@ -473,19 +480,19 @@ const body = {
 		}
 	},
 	ruka: {
-		id: 2,
+		id: 'ruka',
 		name: 'Ruka',
 		desc: 'Ruka',
 		image: 'hand.png',
 		parts: {
 			zglob: {
-				id: 1,
+				id: 'zglob',
 				name: 'Ručni Zglob',
-				desc: 'Ručni Zglob',
+				desc: 'Lečenje i olakšanje',
 				image: 'wrist.png',
 				products: [
 					{
-						id: 1,
+						id: 45,
 						name: 'Arthronal',
 						desc: 'Kapsule',
 						image: 'arthronal.png',
@@ -495,7 +502,7 @@ const body = {
 							'Potpomaže normalno stvaranja kolagena, vezivnog tkiva i normalnu koštanu funkciju.Poboljšava fukcionalni kapacitet zglobova.Potpomaže zdrav inflamatorni odgovor.'
 					},
 					{
-						id: 2,
+						id: 46,
 						name: 'Cartinorm',
 						desc: 'Prašak za oralni rastvor',
 						image: 'cartinorm.png',
@@ -505,7 +512,7 @@ const body = {
 							'Glukozamin je gradivna komponenta hrskavice. Ima povoljne efekte na očuvanje i održavanje optimalne funkcije hrskavice i zglobova i to normalizujući funkciju hondrocita (ćelija hrskavice).Hondroitin-sulfat je glavna komponenta hrskavice, konstruktivni sastojak proteoglikana koji obezbeđuje mehanička i elastična svojstva hrskavice. Deficit hondroitin-sulfata u hrskavici je povezan sa pojavom osteoartritisa.'
 					},
 					{
-						id: 3,
+						id: 47,
 						name: 'Flexaktiv 9',
 						desc: 'Tablete',
 						image: 'flexaktiv9.png',
@@ -515,26 +522,27 @@ const body = {
 							'Glukozamin je osnovni gradivni materijal zglobnih struktura. Indijski tamjan doprinosi održavanju normalne pokretljivosti zglobova.Rizoma kurkume smanjuje otečenost zglobova, ima protivupalno dejstvo.Rizoma đumbira smanjuje bol kod osoba sa osteoartritisom.Vitamin C doprinosi normalnom stvaranju kolagena za normalnu funkciju kostiju i hrskavice te doprinosi zaštiti ćelija od oksidativnog stresa.Mangan doprinosi normalnom stvaranju vezivnog tkiva, doprinosi zaštiti ćelija od oksidativnog stresa te doprinosi održavanju normalnih kostiju.Selen doprinosi zaštiti ćelija od oksidativnog stresa.'
 					},
 					{
-						id: 4,
+						id: 48,
 						name: 'No-Dol max',
 						desc: 'Tablete',
+						image: 'nodol-max.png',
 						purpose:
-							'preporučuju se kod hroničnih reumatskih tegoba, kao i kod sportskih povreda.',
+							'Preporučuju se kod hroničnih reumatskih tegoba, kao i kod sportskih povreda.',
 						effects:
-							': Dijetetski dodatak ishrani sa manganom, glukozaminom, kondroitinom, MSM kompleksom i biljnim ekstraktima aloje i đavolje kandže, koji povoljno utiče na pokretljivost zglobova. Olakšava tegobe izazvane hroničnim upalama zglobova, smanjuje bolove i oticanje, pospešuje pokretljivost zglobova i ubrzava oporavak nakon povreda i preloma.'
+							'Dijetetski dodatak ishrani sa manganom, glukozaminom, kondroitinom, MSM kompleksom i biljnim ekstraktima aloje i đavolje kandže, koji povoljno utiče na pokretljivost zglobova. Olakšava tegobe izazvane hroničnim upalama zglobova, smanjuje bolove i oticanje, pospešuje pokretljivost zglobova i ubrzava oporavak nakon povreda i preloma.'
 					},
 					{
-						id: 5,
+						id: 49,
 						name: 'K2D3',
 						desc: 'Tablete',
 						image: 'k2d3.png',
 						purpose:
-							'sadrži najoptimalniju kombinaciju dva esencijalna vitamina koji sinergistički deluju na jačanje kostiju. Preporučuje se uz kalcijum osobama koje boluju od osteoporoze',
+							'Sadrži najoptimalniju kombinaciju dva esencijalna vitamina koji sinergistički deluju na jačanje kostiju. Preporučuje se uz kalcijum osobama koje boluju od osteoporoze',
 						effects:
-							'poboljšava apsorpciju i upotrebljivost kalcijuma,usmerava kalcijum u kosti,podstiče izgradnju i regeneraciju kostiju,poboljšava mineralizaciju kostiju,povećava gustinu kostiju.K2D3 usmerava kalcijum u kosti umesto u krvne sudove što je istovremeno bitno i za zdravlje kostiju i za kardiovaskularno zdravlje.'
+							'Poboljšava apsorpciju i upotrebljivost kalcijuma,usmerava kalcijum u kosti,podstiče izgradnju i regeneraciju kostiju,poboljšava mineralizaciju kostiju,povećava gustinu kostiju.K2D3 usmerava kalcijum u kosti umesto u krvne sudove što je istovremeno bitno i za zdravlje kostiju i za kardiovaskularno zdravlje.'
 					},
 					{
-						id: 6,
+						id: 50,
 						name: 'Hyalfit',
 						desc: 'Kapsule',
 						image: 'hyalfitkapsule.png',
@@ -544,7 +552,7 @@ const body = {
 							'Kolagen utiče na ćelije hrskavice i kostiju tako što stimuliše povećanje proizvodnje dodatnog, novog kolagena i sprečava razgradnju već postojeće strukture hrskavice. Time se poboljšava pokretljivost zglobova .Boswellia ublažava proces upala, pozitivno deluje kod ublažavanja simptoma osteoartritisa, pomaže kod bolova u zgobovima, jutarnje ukočenosti i poboljšava pokretljivost zglobova. Hondroitin sulfat je važna strukturna komponeneta hrskavice i pomaže kod otpornosti na pritisak u zglobu. Hijaluronska kiselina ima esencijalnu ulogu u održavanju normalne funkcije zglobova'
 					},
 					{
-						id: 7,
+						id: 51,
 						name: 'Vitalis Sports Cream',
 						desc: 'Krem',
 						image: 'sportscream.png',
@@ -554,7 +562,7 @@ const body = {
 							'Trenutno ublažava bol.Eukaliptus, nana, ruzmarin i aloe vera će vratiti mladost Vašim zglobovima.Sports cream ne samo da ublažava bol nego i jača hrskavicu i poboljšava cirkulaciju u samom zglobu.'
 					},
 					{
-						id: 8,
+						id: 52,
 						name: 'Artox Gel',
 						desc: 'Gel',
 						image: 'artoxgel.png',
@@ -564,7 +572,7 @@ const body = {
 							'Aktivni sastojci Artox gela ostvaruju i antizapaljenska, antiedematozna i analgetska svojstva delujući povoljno na smanjenje bola, otoka i upale.'
 					},
 					{
-						id: 9,
+						id: 53,
 						name: 'Hyalfit',
 						desc: 'Gel',
 						image: 'hyalfitgel.png',
@@ -574,7 +582,7 @@ const body = {
 							'Mentol u kombinaciji sa alkoholom prokrvljuje, hladi i pomaže da se bolje apsorbuju aktivne supstance.Preparat sadrži uravnoteženu kombinaciju tri vrste biljaka (indijski tamjan - Boswellia serrata, gavez- Symphytum officinale, divlji kesten- Aesculus hyppocastanum) sa blagotvornim dejstvom na celokupni koštano-mišićni sistem.Hyalfit gel je dodatno obogaćen hijaluronskom kiselinom, koja je sastavni deo sinovijalne tečnosti zglobova.'
 					},
 					{
-						id: 10,
+						id: 54,
 						name: 'Cetilar',
 						desc: 'Krem',
 						image: 'cetilar.png',
@@ -582,56 +590,56 @@ const body = {
 							'Cetilar krem je nova formula brzog dejstva za lokalnu upotrebu kod traumatičnih i artritičnih bolova u zglobovima, mišićima i tetivama.',
 
 						effects:
-							'koja poboljšava funkciju zglobova, povećava obim pokreta i ublažava bol.Zbog svojih odličnih svojstava hlađenja i podmazivanja, proizvod je pogodan za sportsku i terapijsku masažu, a koristi se i kao pomoć kod bolova u zglobovima, tetivama i mišićno-skeletnom sistemu.'
+							'Poboljšava funkciju zglobova, povećava obim pokreta i ublažava bol.Zbog svojih odličnih svojstava hlađenja i podmazivanja, proizvod je pogodan za sportsku i terapijsku masažu, a koristi se i kao pomoć kod bolova u zglobovima, tetivama i mišićno-skeletnom sistemu.'
 					},
 					{
-						id: 11,
+						id: 55,
 						name: 'NEM',
 						desc: 'Kapsule',
 						image: 'nem.png',
 						purpose:
-							'sadrže membranu ljuske jajeta u prahu koja je prirodan izvor proteina, prirodnog glukozamina, prirodnog hondroitin sulfata, prirodne hijaluronske kiseline i prirodnog kolagena tipa I.',
+							'Sadrže membranu ljuske jajeta u prahu koja je prirodan izvor proteina, prirodnog glukozamina, prirodnog hondroitin sulfata, prirodne hijaluronske kiseline i prirodnog kolagena tipa I.',
 						effects:
 							'Membrana ljuske jajeta sadrži identične komponente kao i ljudski zglobovi, tako da predstavlja koristan izvor hranljivih supstanci neophodnih za stalno obnavljanje hrskavice i vezivnog tkiva, održavanje punog kvaliteta zdravlja zglobne hrskavice i okolnih struktura.'
 					},
 					{
-						id: 12,
+						id: 56,
 						name: 'Biofreeze',
 						desc: 'Gel',
 						image: 'biofreeze.png',
 						purpose:
 							'Biljni ekstrakti Biofreeze gela predstavljaju analgetičku komponentu koja blagotvorno deluje na povređeno i oštećeno tkivo, u smislu lokalnog analgetičkog efekta. Bol uklanja brzo i efikasno. Prodire duboko i obezbeđuje produženo dejstvo.',
 						effects:
-							':Brzo i efikasno uklanja sve vrste bolova i grčeva uz prijatan osećaj hlađenja, podstiče cirkulaciju i olakšava tegobe nastale kao posledica proširenih vena: bol ,otok, napetost, trnjenje, grčeve, pucanje kapilara, osećaj “teških nogu”, pomaže kod sportskih povreda, istegnuća i uganuća, otklanja glavobolju, smanjuje bolove u vratu i leđima. Zbog svoje teksture analgetskog dejstva i osvežavajućeg mirisa mentola pogodan je za masažu.'
+							'Brzo i efikasno uklanja sve vrste bolova i grčeva uz prijatan osećaj hlađenja, podstiče cirkulaciju i olakšava tegobe nastale kao posledica proširenih vena: bol ,otok, napetost, trnjenje, grčeve, pucanje kapilara, osećaj “teških nogu”, pomaže kod sportskih povreda, istegnuća i uganuća, otklanja glavobolju, smanjuje bolove u vratu i leđima. Zbog svoje teksture analgetskog dejstva i osvežavajućeg mirisa mentola pogodan je za masažu.'
 					}
 				]
 			}
 		}
 	},
 	torzo: {
-		id: 3,
+		id: 'torzo',
 		name: 'Torzo',
-		desc: 'Torzo',
+		desc: 'Kontrola i lečenje',
 		image: 'torso.png',
 		parts: {
 			varenje: {
-				id: 1,
+				id: 'varenje',
 				name: 'Sistem za Varenje',
-				desc: 'Varenje hrane',
+				desc: 'Pomoć i kontrola',
 				image: 'coction.png',
 				products: [
 					{
-						id: 1,
+						id: 57,
 						name: 'Antimetil',
 						desc: 'Tablete',
 						image: 'antimetil.png',
 						purpose:
-							'. Može se koristiti u slučaju prekomernog unosa hrane, narušavanja uobičajenih navika ishrane (npr. na odmoru), kod jutarnjih mučnina u trudnoći, putne mučnine...',
+							'Može se koristiti u slučaju prekomernog unosa hrane, narušavanja uobičajenih navika ishrane (npr. na odmoru), kod jutarnjih mučnina u trudnoći, putne mučnine...',
 						effects:
-							'Antimetil sadrži ekstrakt rizoma đumbira, koji olakšava varenje. '
+							'Antimetil sadrži ekstrakt rizoma đumbira, koji olakšava varenje.'
 					},
 					{
-						id: 2,
+						id: 58,
 						name: 'Phyto Digestion',
 						desc: 'Biofar',
 						image: 'phyto-digestion.png',
@@ -639,7 +647,7 @@ const body = {
 						effects: 'Sadrži biljne enzime iz artičoke, ananasa i papaje. '
 					},
 					{
-						id: 3,
+						id: 59,
 						name: 'Digestal',
 						desc: 'Tablete',
 						image: 'digestal.png',
@@ -648,7 +656,7 @@ const body = {
 						effects: 'Dodatni izvor enzima pankreasa. '
 					},
 					{
-						id: 4,
+						id: 60,
 						name: 'Enzynorm',
 						desc: 'Tablete',
 						image: 'enzynorm.png',
@@ -658,7 +666,7 @@ const body = {
 							'Sadrži pet enzima za varenje - alfa-amilaza, proteaza, celulaza, lipaza, laktaza. '
 					},
 					{
-						id: 5,
+						id: 61,
 						name: 'Tinctura Carminativa',
 						desc: 'Tečnost',
 						image: 'gasovi-u-stomaku.png',
@@ -669,24 +677,25 @@ const body = {
 						limits: 'Preparat sadrži alkohol (etanol)!'
 					},
 					{
-						id: 6,
+						id: 62,
 						name: 'Čaj od cveta kamilice',
 						desc: 'Čaj',
 						image: 'cvet-kamilice.png',
 						purpose:
-							'koristi se za olakšanje varenja, kod proliva, kod hemoroida. Supenu kašiku cveta kamilice preliti šoljom (200ml) ključale vode. Sud poklopiti i ostaviti da stoji 5-10 minuta, procediti. Piti 3-4 puta dnevno po šolju čaja.',
-						effects: 'Antiseptik'
+							'Koristi se za olakšanje varenja, kod proliva, kod hemoroida. Supenu kašiku cveta kamilice preliti šoljom (200ml) ključale vode. Sud poklopiti i ostaviti da stoji 5-10 minuta, procediti. Piti 3-4 puta dnevno po šolju čaja.',
+						effects: 'Antiseptik.'
 					},
 					{
-						id: 7,
+						id: 63,
 						name: 'Čaj od cveta lipe',
 						desc: 'Čaj',
+						image: 'cvet-lipe.png',
 						purpose:
 							'Supenu kašiku lipovog cveta preliti šoljom (200ml) ključale vode. Sud poklopiti i ostaviti da stoji 10 minuta zatim čaj procediti i zasladiti po želji. Piti 2-3 šolje čaja dnevno',
 						effects: 'Olakšanje varenja'
 					},
 					{
-						id: 8,
+						id: 64,
 						name: 'Čaj od korena angelike',
 						desc: 'Čaj',
 						image: 'koren-angelike.png',
@@ -696,7 +705,7 @@ const body = {
 						limits: 'Može izazvati fotosenzitivnu alergijsku reakciju.'
 					},
 					{
-						id: 9,
+						id: 65,
 						name: 'Čaj od korena i nadzemnog dela maslačka',
 						desc: 'Čaj',
 						image: 'koren-maslacka.png',
@@ -705,7 +714,7 @@ const body = {
 							'Kafenu kašičicu usitnjenog korena maslačka preliti sa 200 ml hladne vode, zagrejati i pustiti da ključa 5 minuta i ostaviti da stoji 10 minuta a zatim čaj procediti. Piti tri puta dnevno po šolju čaja pre jela.'
 					},
 					{
-						id: 10,
+						id: 66,
 						name: 'Čaj od korena vodopije',
 						desc: 'Čaj',
 						image: 'koren-vodopije.png',
@@ -717,7 +726,7 @@ const body = {
 							'Savetuje se oprez kod pacijenata sa kamenom u žuči. Ne sme se koristiti kod alergije na cikoriju ili druge biljke koje pripadaju familiji Asteraceae.'
 					},
 					{
-						id: 11,
+						id: 67,
 						name: 'Kapi korena maslačka',
 						desc: 'Tinctura Taraxaci',
 						image: 'biljne-kapi-maslacka.png',
@@ -728,7 +737,7 @@ const body = {
 							'Usled prisustva alkohola upotreba tinkture se ne preporučuje trudnicama, dojiljama i deci mlađoj od 12 godina.'
 					},
 					{
-						id: 12,
+						id: 68,
 						name: 'Kapi lincure',
 						desc: 'Tinctura Gentianae',
 						image: 'kapi-lincure.png',
@@ -738,7 +747,7 @@ const body = {
 							'Preparat sadrži alkohol pa se upotreba tinkture ne preporučuje trudnicama, dojiljama i deci mlađoj od 12 godina. Upotreba se ne preporučuje ni osobama koje boluju od čira u želucu ili dvanaestopalačnom crevu, kao ni osobama koje pate od povišenog krvnog pritiska.'
 					},
 					{
-						id: 13,
+						id: 69,
 						name: 'Kapi nane',
 						desc: 'Tinctura Menthae piperitae',
 						image: 'kapi-nane.png',
@@ -748,7 +757,7 @@ const body = {
 							'Preparat sadrži alkohol pa se upotreba tinkture ne preporučuje trudnicama, dojiljama i deci mlađoj od 12 godina.'
 					},
 					{
-						id: 14,
+						id: 70,
 						name: 'Kapi od artičoke',
 						desc: 'Cynarae tinctura',
 						image: 'kapi-articoke.png',
@@ -760,7 +769,7 @@ const body = {
 							'Ne preporučuje se upotreba proizvoda kod osoba koje su osetljive na neki od njegovih sastojaka ili na sastojke biljaka iz familije Asteraceae.Proizvod nije namenjen trudnicama, dojiljama i deci malđoj od 12 godina.Ne preporučuje se upotreba proizvoda osobama koje boluju od opstrukcije žučnih puteva , holangitisa, kamena u žuči ili hepatitisa.'
 					},
 					{
-						id: 15,
+						id: 71,
 						name: 'Kapi protiv grčeva u stomaku',
 						desc: 'Tinctura Antispasmodica',
 						purpose:
@@ -771,7 +780,7 @@ const body = {
 							'Kod osoba alergičnih na biljke iz porodice Asteraceae moguće su alergijske reakcije. Preparat sadrži alkohol pa se upotreba tinkture ne preporučuje trudnicama, dojiljama i deci mlađoj od 12 godina.'
 					},
 					{
-						id: 16,
+						id: 72,
 						name: 'Kapi za apetit',
 						desc: 'Tinctura Digestiva',
 						image: 'kapi-za-apetit.png',
@@ -782,7 +791,7 @@ const body = {
 						limits: 'Preparat sadrži alkohol (etanol)!'
 					},
 					{
-						id: 17,
+						id: 73,
 						name: 'Čaj od nadzemnog dela hajdučke trave',
 						desc: 'Čaj',
 						image: 'hajducka-trava.png',
@@ -796,13 +805,13 @@ const body = {
 				]
 			},
 			želudac: {
-				id: 2,
+				id: 'zeludac',
 				name: 'Želudac',
-				desc: 'Želudac',
+				desc: 'Olakšanje i lečenje',
 				image: 'stomach.png',
 				products: [
 					{
-						id: 1,
+						id: 74,
 						name: 'BioGast',
 						desc: 'Biljna Tinktura',
 						image: 'bio-gast.png',
@@ -810,7 +819,7 @@ const body = {
 							'Koristi se kao dodatak ishrani kod tegoba kao što su gastritis i gorušica, jaka želudačna kiselina i prisustvo helikobaktera.'
 					},
 					{
-						id: 2,
+						id: 75,
 						name: 'BioGastritis',
 						desc: 'Biljne Kapi',
 						image: 'biogastritis.png',
@@ -818,25 +827,27 @@ const body = {
 							'Pomažu kod viška želudačne kiseline,hroničnog gastritisa, helicobacter pylori, čir na želucu i dvanestopalačnom crevu, neprijatnog zadaha prouzrokovanog zapaljenjem želudačne sluznice'
 					},
 					{
-						id: 3,
+						id: 76,
 						name: 'Čaj od cveta crnog sleza',
 						desc: 'Čaj',
+						image: 'caj-crnislez.png',
 						purpose:
 							'Lekoviti sastojci crnog sleza koriste kod upale želudačne sluznice i kod blažih proliva.',
 						effects:
 							'Jednu kafenu kašičicu cveta crnog sleza preliti sa 250ml hladne vode i ostaviti da stoji 5-10 sati (najkraće 2 sata), zagrejati do ključanja, skloniti sa vatre, ostaviti 5 minuta poklopljeno, procediti i piti.'
 					},
 					{
-						id: 4,
+						id: 77,
 						name: 'Čaj od cveta nevena',
 						desc: 'Čaj',
+						image: 'cvet-nevena.png',
 						purpose:
 							'Aktivni sastojci nevena deluju protivupalno, antiseptično.',
 						effects:
 							'Unutrašnja upotreba: Jednu do dve kafene kašike cveta nevena preliti šoljom (200ml) ključale vode. Sud poklopiti, ostaviti da stoji 10-15 min a zatim čaj procediti. Piti tri puta dnevno po šolju nezaslađenog čaja. Spoljašnja upotreba: Dve kašike cveta nevena preliti sa pola litra ključale vode. Sud poklopiti, ostaviti da stoji 10-15 min a zatim čaj procediti.'
 					},
 					{
-						id: 5,
+						id: 78,
 						name: 'Čaj od korena vodopije',
 						desc: 'Čaj',
 						image: 'koren-vodopije.png',
@@ -848,7 +859,7 @@ const body = {
 							'Savetuje se oprez kod pacijenata sa kamenom u žuči. Ne sme se koristiti kod alergije na cikoriju ili druge biljke koje pripadaju familiji Asteraceae.'
 					},
 					{
-						id: 6,
+						id: 79,
 						name: 'Čaj od lanenog brašna',
 						desc: 'Čaj',
 						image: 'laneno-brasno.png',
@@ -859,7 +870,7 @@ const body = {
 						limits: 'Ne sme se koristiti kod vezanih creva.'
 					},
 					{
-						id: 7,
+						id: 80,
 						name: 'Ulje od kantariona za unutrašnju upotrebu',
 						desc: 'HYPERICI OLEUM PRO USUI INTERNA',
 						image: 'ulje-kantarion.png',
@@ -869,7 +880,7 @@ const body = {
 						limits: 'Obratiti pažnju na priloženo uputstvo za upotrebu.'
 					},
 					{
-						id: 8,
+						id: 81,
 						name: 'Biljne kapi za želudac',
 						desc: 'TINCTURA STOMACHICA',
 						image: 'kapi-zeludac.png',
@@ -881,13 +892,13 @@ const body = {
 				]
 			},
 			crevni: {
-				id: 3,
+				id: 'crevni',
 				name: 'Crevni sistem',
-				desc: 'Crevni sistem',
+				desc: 'Lečenje i kontrola',
 				image: 'bowels.png',
 				products: [
 					{
-						id: 1,
+						id: 82,
 						name: 'Bilax D',
 						desc: 'Kapsule',
 						image: 'bilax-d.png',
@@ -895,16 +906,17 @@ const body = {
 							'Biljni proizvod koji može doprineti lakšem pražnjenju creva.'
 					},
 					{
-						id: 2,
+						id: 83,
 						name: 'Karbofin forte',
 						desc: 'Kapsule',
+						image: 'karbofin-forte.png',
 						purpose:
 							'Dodatak ishrani sa biljnim ugljem i biljnim ekstraktima od značaja za održavanje zdravlja digestivnog sistema. Bez glutena.',
 						effects:
 							'Olakšava tegobe kod nadimanja, lošeg varenja, bolova u želucu nakon obilnih i masnih obroka.'
 					},
 					{
-						id: 3,
+						id: 84,
 						name: 'Ten Herbs',
 						desc: 'Laksativ',
 						image: 'ten-herbs.png',
@@ -914,7 +926,7 @@ const body = {
 							'Ubrzava pražnjenje creva ne izazivajući grčeve i bolove pri pražnjenju.'
 					},
 					{
-						id: 4,
+						id: 85,
 						name: 'Isilax',
 						desc: 'Sirup',
 						image: 'isilax.png',
@@ -924,16 +936,17 @@ const body = {
 							'Poboljšava tranzit crevnog sadržaja i doprinosi normalnoj funkciji digestivnog trakta.'
 					},
 					{
-						id: 5,
+						id: 86,
 						name: 'Colosal',
 						desc: 'Tablete',
+						image: 'colosal.png',
 						purpose:
 							'Colosal je dodatak ishrani na bazi buterne kiseline, fruktooligosaharida (FOS) i živih kultura Bifidobacterium bifidum i Bifidobacterium lactis.',
 						effects:
 							'Tableta u celosti dospeva u debelo crevo, gde se rastapa i oslobađa komponente.'
 					},
 					{
-						id: 6,
+						id: 87,
 						name: 'Čaj od lanenog brašna',
 						desc: 'Čaj',
 						image: 'laneno-brasno.png',
@@ -944,7 +957,7 @@ const body = {
 						limits: 'Ne sme se koristiti kod vezanih creva.'
 					},
 					{
-						id: 7,
+						id: 88,
 						name: 'Čaj od korena sladića',
 						desc: 'Čaj',
 						purpose:
@@ -955,16 +968,17 @@ const body = {
 							'Kod osoba sa kardio-vaskularnim smetnjama gde dolazi do zadržavanja natrijuma i hipokalemije ; kod šećerne bolesti, kod terapije hormonskim preparatima i oštećenja jetre upotrebu treba ograničiti. Ne preporučuje se trudnicama i dojiljama. Koren sladića ne treba koristiti duže od 4-5 meseci.'
 					},
 					{
-						id: 8,
+						id: 89,
 						name: 'Čaj od cveta divizme',
 						desc: 'Čaj',
+						image: 'divizma-caj.png',
 						purpose:
 							'Preporučuje se kod proliva izazvanih upalom crevne sluzokože.',
 						effects:
 							'Jednu kafenu kašičicu cveta divizme preliti sa 200 ml ključale vode, ostaviti da stoji 5 do 10 minuta, procediti i piti više puta dnevno po šolju čaja. Aktivni sastojci CVETA DIVIZME pokazuju protivupalno, antiseptično, antiviralno i analgetično delovanje. Prisutne sluzi oblažu iritiranu sluzokožu organa za varenje.'
 					},
 					{
-						id: 9,
+						id: 90,
 						name: 'Čaj od cveta nevena',
 						desc: 'Čaj',
 						image: 'cvet-nevena.png',
@@ -974,7 +988,7 @@ const body = {
 							'Aktivni sastojci nevena deluju protivupalno, antiseptično.Unutrašnja upotreba: Jednu do dve kafene kašike cveta nevena preliti šoljom (200ml) ključale vode. Sud poklopiti, ostaviti da stoji 10-15 min a zatim čaj procediti. Piti tri puta dnevno po šolju nezaslađenog čaja. Spoljašnja upotreba: Dve kašike cveta nevena preliti sa pola litra ključale vode. Sud poklopiti, ostaviti da stoji 10-15 min a zatim čaj procediti.'
 					},
 					{
-						id: 10,
+						id: 91,
 						name: 'Čaj od kore krušine',
 						desc: 'Čaj',
 						purpose: 'Olakšava pražnjenje creva i koristi se kod zatvora.',
@@ -984,28 +998,30 @@ const body = {
 							'Ne preporučuje se duža upotreba kao ni upotreba tokom trudnoće i dojenja. Kontraindikovana je upotreba kod ileusa (u narodu rečeno  zavazana creva).'
 					},
 					{
-						id: 11,
+						id: 92,
 						name: 'Čaj od korena maslačka',
 						desc: 'Čaj',
-						image: 'koren-maslacka.png',
+						image: 'caj-koren-maslacak.png',
 						purpose:
 							'Kao gorko sredstvo za podsticanje apetita ,olakšava pražnjenje creva , kod poremećaja varenja.',
 						effects:
-							'Kafenu kašičicu usitnjenog korena maslačka preliti sa 200 ml hladne vode, zagrejati i pustiti da ključa  5 minuta i ostaviti da stoji 10 minuta a zatim čaj procediti. Piti tri puta dnevno po šolju čaja pre jela. Kafenu kašiku lista maslačka preliti sa 200 ml ključale vode. Sud poklopiti i ostaviti da stoji 15 min. Procediti i piti 3 puta dnevno po šolju čaja.'
+							'Kafenu kašičicu usitnjenog korena maslačka preliti sa 200 ml hladne vode, zagrejati i pustiti da ključa 5 minuta i ostaviti da stoji 10 minuta a zatim čaj procediti. Piti tri puta dnevno po šolju čaja pre jela. Kafenu kašiku lista maslačka preliti sa 200 ml ključale vode. Sud poklopiti i ostaviti da stoji 15 min. Procediti i piti 3 puta dnevno po šolju čaja.'
 					},
 					{
-						id: 12,
+						id: 93,
 						name: 'KAPI KORENA MASLAČKA ',
 						desc: 'Tinctura Taraxaci',
+						image: 'kapi-maslacka.png',
 						purpose:
 							'Aktivni sastojci korena maslačka, usled gorkog ukusa povoljno deluju na podsticanje apetita i regulisanje varenja i olakšavaju pražnjenje creva.',
 						limits:
 							'Usled prisustva alkohola upotreba tinkture se ne preporučuje trudnicama, dojiljama i deci mlađoj od 12 godina. Kod osetljivih osoba može izazvati alergijske reakcije.'
 					},
 					{
-						id: 13,
+						id: 94,
 						name: 'Čaj od lista sene',
 						desc: 'Čaj',
+						image: 'list-sene.png',
 						purpose:
 							'Preporučuje se kod povremenih zatvora, za regulisanje stolice.',
 						effects:
@@ -1016,13 +1032,13 @@ const body = {
 				]
 			},
 			dijareja: {
-				id: 4,
+				id: 'dijareja',
 				name: 'Dijareja',
-				desc: 'Proliv',
+				desc: '(Proliv)',
 				image: 'diahrrea.png',
 				products: [
 					{
-						id: 1,
+						id: 95,
 						name: 'Kapi protiv dijareje',
 						desc: 'Tinctura ANTIDIARRHOICA',
 						purpose:
@@ -1033,7 +1049,7 @@ const body = {
 							'Ukoliko se uz primenu ovog preparata dijareja ne zaustavi u roku od 3 – 4 dana, neophodno je potražiti pomoć lekara.'
 					},
 					{
-						id: 2,
+						id: 96,
 						name: 'Bulacol 500',
 						desc: 'Tablete',
 						purpose:
@@ -1041,7 +1057,7 @@ const body = {
 					},
 
 					{
-						id: 3,
+						id: 97,
 						name: 'EsenBak Direct',
 						desc: 'Direct Ultra Strong',
 						image: 'esenback-direct.png',
@@ -1049,7 +1065,7 @@ const body = {
 							'Kombinacija 8 pažljivo odabranih probiotskih sojeva iz rodova Bifidobacterium i Lactobacillus u dozi od 50 milijardi dobrih bakterija.'
 					},
 					{
-						id: 4,
+						id: 98,
 						name: 'Flonivin Boulardii',
 						desc: 'Kapsule',
 						image: 'flonivin-boulardii.png',
@@ -1057,7 +1073,7 @@ const body = {
 							'Flonivin Boulardii kapsule sa 10 milijardi korisnih mikroorganizama Saccharomyces boulardii, cinkom i vitaminom D3. Kod osoba sa akutnim i putničkim dijarejama, dijarejama uzrokovanim antibioticima, kod zapaljenskih bolesti creva.'
 					},
 					{
-						id: 5,
+						id: 99,
 						name: 'Aktivni ugalj',
 						desc: 'Kapsule',
 						image: 'aktivni-ugalj.png',
@@ -1066,7 +1082,7 @@ const body = {
 						effects: 'Rešava simptome mamurluka i nadutosti.'
 					},
 					{
-						id: 6,
+						id: 100,
 						name: 'Čaj od cveta divizme',
 						desc: 'Čaj',
 						purpose:
@@ -1075,7 +1091,7 @@ const body = {
 							'Jednu kafenu kašičicu cveta divizme preliti sa 200 ml ključale vode, ostaviti da stoji 5 do 10 minuta, procediti i piti više puta dnevno po šolju čaja. Aktivni sastojci CVETA DIVIZME pokazuju protivupalno, antiseptično, antiviralno i analgetično delovanje. Prisutne sluzi oblažu iritiranu sluzokožu organa za varenje'
 					},
 					{
-						id: 7,
+						id: 101,
 						name: 'Čaj od kore hrasta',
 						desc: 'Čaj',
 						image: 'kora-hrasta.png',
@@ -1085,7 +1101,7 @@ const body = {
 						limits: 'Ne preporučuje se kod dečjih proliva.'
 					},
 					{
-						id: 8,
+						id: 102,
 						name: 'Čaj od lista borovnice',
 						desc: 'Čaj',
 						image: 'list-borovnice.png',
@@ -1097,7 +1113,7 @@ const body = {
 							'Zbog nedostatka podataka o toksičnosti ne preporučuje se samomedikacija listom borovnice.'
 					},
 					{
-						id: 9,
+						id: 103,
 						name: 'Čaj od lista crnog čaja',
 						desc: 'Čaj',
 						image: 'list-crnog-caja.png',
@@ -1109,7 +1125,7 @@ const body = {
 							'Tokom trudnoće i dojenja izbegavati upotrebu većih količina crnog čaja.'
 					},
 					{
-						id: 10,
+						id: 104,
 						name: 'Čaj od lista kupine',
 						desc: 'Čaj',
 						image: 'list-kupine.png',
@@ -1120,13 +1136,13 @@ const body = {
 				]
 			},
 			štitna: {
-				id: 5,
+				id: 'štitna',
 				name: 'Štitna Žlezda',
-				desc: 'štitne žlezde',
+				desc: 'Lečenje i kontrola',
 				image: 'thyroid.png',
 				products: [
 					{
-						id: 1,
+						id: 105,
 						name: 'Selen 100',
 						desc: 'Max Inpharm Tablete',
 						image: 'selen-100.png',
@@ -1136,7 +1152,7 @@ const body = {
 							'Vrlo je moćan antioksidans i doprinosi neutralisanju efekata slobodnih radikala i smanjenju oštećenja koja su nastala pod njihovim dejstvom. Štiteći ćelije od oksidacije, on doprinosi sprečavanju preranog starenja kože, mišića i mozga'
 					},
 					{
-						id: 2,
+						id: 106,
 						name: 'Selen 100',
 						desc: 'Solgar Tablete',
 						image: 'selen-solgar.png',
@@ -1146,7 +1162,7 @@ const body = {
 							'Selen unapređuje zaštitnu ulogu imunološkog sistema poboljšavanjem delovanja T-limfocita i makrofaga koji čiste krv od štetnih toksina. Važan je detoksikator jetre od mogućih oštećenja pesticidima, hormonima, lekovima, teškim metalima, nusproduktima. Selen ima korisna dejstva u svim stanjima oslabljenog imuniteta, kod kardiovaskularnih tegoba, problema sa štitnom žlezdom, u prevenciji starenja i propadanja ćelija, kao i za unapređenje i zaštitu zdravlja.'
 					},
 					{
-						id: 3,
+						id: 107,
 						name: 'Selen+Zn',
 						desc: 'Direct Kesice',
 						image: 'selen-zn.png',
@@ -1156,7 +1172,7 @@ const body = {
 							'Selen i cink su važni minerali koji jačaju zdravlje celog organizma.Selen je moćan antioksidans koji: Štiti ćelije i tkiva od štetnog uticaja slobodnih radikala što usporava starenje, utiče na plodnost muškarca tako što podstiče spermatogenezu. Neophodan je za zdravlje prostate. Deluje imunostimulativno što je od izuzetne važnosti za jačenje imunog sistema. Učestvuje u proizvodnji aktivnih hormona štitne žlezde što je neophodno za njeno pravilno funkcionisanje.'
 					},
 					{
-						id: 4,
+						id: 108,
 						name: 'Primed 7',
 						desc: 'Preparat',
 						purpose:
@@ -1165,7 +1181,7 @@ const body = {
 							'Povećane potrebe za unosom joda iz prirodnih izvora. Prirodan sastav preparata obezbeđuje dobru apsorpciju i iskorišćenost aktivnih sastojaka. Svakodnevnom upotrebom PRIMED 7 preparata obezbeđuje se optimalan dnevni unos joda. Blagotvorno deluje na simptome koji prate smanjenu funkciju štitaste žlezde, kao dopuna osnovnoj terapiji. Blagotvorno deluje na usporavanje toka Hashimoto tireoiditisa i pomaže očuvanje funkcije štitaste žlezde.'
 					},
 					{
-						id: 5,
+						id: 109,
 						name: 'Tirox',
 						desc: 'Biljne Kapi',
 						image: 'tirox.png',
@@ -1177,13 +1193,13 @@ const body = {
 				]
 			},
 			pluća: {
-				id: 6,
-				name: 'Donji Respiratorni Trakt',
-				desc: 'Pluća',
+				id: 'pluca',
+				name: 'Pluća',
+				desc: 'Donji Respiratorni Trakt',
 				image: 'lungs.png',
 				products: [
 					{
-						id: 1,
+						id: 110,
 						name: 'Altiprim P',
 						desc: 'Tablete',
 						image: 'altiprim.png',
@@ -1195,52 +1211,58 @@ const body = {
 							'Ne sme se prekoračiti preporučena dnevna doza. Pre upotrebe sadržaj bočice promućkati. Ne preporučuje se za upotrebu kod dece mlađe od 3 godine starosti.'
 					},
 					{
-						id: 2,
+						id: 111,
 						name: 'Prospan',
 						desc: 'Sirup',
+						image: 'prospan.png',
 						purpose:
 							'Prospan sirup je biljni lek koji se koristi za ublažavanje simptoma akutnih i hroničnih zapaljenskih oboljenja disajnih puteva praćenih produktivnim kašljem.',
 						limits:
 							'Lek Prospan ne smete koristiti ako ste alergični (preosetljivi) na bršljan ili na druge biljke iz familije Araliaceae, ili na bilo koji drugi sastojak ovog leka. Lek se ne sme davati deci ispod 2 godine starosti zbog rizika od pogoršanja respiratornih simptoma.'
 					},
 					{
-						id: 3,
+						id: 112,
 						name: 'Herba Med No.29',
 						desc: 'Čajna mešavina',
+						image: 'herbamed29.png',
 						purpose:
 							'Sadrži sve lekovite supstance biljaka koje mogu da ojačaju otpornost sluznice respiratornog trakta, obnavljaju njene oštećene ćelije i vraćaju joj normalnu zaštitnu funkciju. Namenjena je kod bronhitisa.',
 						effects:
 							'Mešavina će vam pomoći upravo kako bi se obezbedilo normalno funkcionisanje sluzokože respiratornog sistema.'
 					},
 					{
-						id: 4,
+						id: 113,
 						name: 'Bioeliksir Sinbio',
 						desc: 'Kapi',
+						image: 'bioeliksir.png',
 						purpose:
 							'Sinbio sadrže svež sok ploda divljeg krastavca i pomoćne supstance. Sinbio kapi deluju pozitivno na disajne organe i pomažu pri izbacivanju nazalnog sekreta.',
 						effects:
 							'Aktivni sastojci preparata potiču iz soka biljke divlji krastavac (Ecballium elaterium (L.) A. Rich) iz familije Cucurbitaceae.'
 					},
 					{
-						id: 5,
+						id: 114,
 						name: 'Bio-Teo komplet br.6',
 						desc: 'ČISTI PLUĆA I BRONHIJE',
+						image: 'bioteo6.png',
 						purpose:
 							'Biljni komplet br. 6 za pluća i disajne puteve sastavljen je od 2 različita proizvoda (seta biljnih kapi) namenjen zdravlju respiratornih organa. Pomaže kod bronhitisa, alergijskog bronhitisa, alergija i astme.'
 					},
 					{
-						id: 6,
+						id: 115,
 						name: 'Čaj od nadzemnog dela čestoslavice',
 						desc: 'Čaj',
+						image: 'cestoslavica-caj.png',
 						purpose:
 							'Preporučuje se : kao tonik, za jačanje organizma kao i za ublažavanje različitih tegoba organa za disanje, kao sredstvo za iskašljavanje kod bronhitisa i astme.',
 						effects:
 							'Način pripreme i upotrebe čaja: Jednu kafenu kašičicu herbe čestoslavice preliti šoljom (200ml) ključale vode, ostaviti da stoji pola sata, procediti. Piti 2 do 3 puta dnevno po šolju čaja.'
 					},
 					{
-						id: 7,
+						id: 116,
 						name: 'Čaj od bokvice',
 						desc: 'Čaj',
+						image: 'list-bokvice.png',
 						purpose:
 							'Koristi se za ublažavanje tegoba kod bolesti organa za disanje, posebno kod hroničnog bronhitisa, upale sluzokože usta i grla.',
 						effects:
@@ -1249,13 +1271,13 @@ const body = {
 				]
 			},
 			jetra: {
-				id: 7,
+				id: 'jetra',
 				name: 'Jetra',
-				desc: 'Jetra',
+				desc: 'Lekovi i preparati',
 				image: 'jetra.png',
 				products: [
 					{
-						id: 1,
+						id: 117,
 						name: 'Livorex Forte',
 						desc: 'Tablete',
 						image: 'livorex.png',
@@ -1267,7 +1289,7 @@ const body = {
 							'Preventivno se savetuje i svima koji u dužem vremenskom periodu imaju povišene transaminaze ili žele da očiste organizam od toksina. '
 					},
 					{
-						id: 2,
+						id: 118,
 						name: 'Liv 52',
 						desc: 'Tablete',
 						image: 'liv52.png',
@@ -1279,7 +1301,7 @@ const body = {
 							'Preporučuje se kod svih oboljenja, djece starije od 12 godina i odraslih, gdje je funkcija jetre smanjena. '
 					},
 					{
-						id: 3,
+						id: 119,
 						name: 'Hepalife',
 						desc: 'Tablete',
 						image: 'hepalife.png',
@@ -1287,7 +1309,7 @@ const body = {
 							'Hepatoprotektor nove generacije sa silibinom aktivnom formom silimarina, uz dodatak još tri aktivna principa. Preporučuje se u terapiji masne jetre, kod hroničnih inflamatornih oboljenja jetre (hepatitis B i C), u terapiji toksičnog oštećenja jetre (alkohol, lekovi i drugi štetni agensi) kao pomoćna terapija kod ciroze jetre i kod hroničnih oštećenja od kamena u žuci.'
 					},
 					{
-						id: 4,
+						id: 120,
 						name: 'Hepadiet',
 						desc: 'Tablete',
 						image: 'hepadiet.png',
@@ -1295,7 +1317,7 @@ const body = {
 							'Dijetetski dodatak ishrani koji sadrži biljne ekstrakte i druge supstance koje ga čine korisnim kod lošeg funkcionisanja jetre, povišenog holesterola, ateroskleroze i kod nedovoljnog lučenja žuči, za lakše varenje hrane.'
 					},
 					{
-						id: 5,
+						id: 121,
 						name: 'Livercare',
 						desc: 'Tablete',
 						image: 'livercare.png',
@@ -1307,23 +1329,23 @@ const body = {
 				]
 			},
 			pankreas: {
-				id: 8,
+				id: 'pankreas',
 				name: 'Dijabetes',
-				desc: 'Dijabetes',
+				desc: 'Kontrola dijabetesa',
 				image: 'diabetes.png',
 				products: [
 					{
-						id: 1,
+						id: 122,
 						name: 'Hrom pikolinat 100 µg',
 						desc: 'Solgar',
 						image: 'hrompikolinat.png',
 						purpose:
-							'sadrži patentirani hrom pikolinat (CHROMAX) koji osigurava izrazito stabilnu strukturu hroma i maksimalnu apsorpciju. CHROMAX je patentirani oblik trovalentnog hroma i pikolinske kiseline. Bioraspoloživost ovog patentiranog oblika potkrepljena je brojnim studijama koje ukazuju na njegovu superiornost u odnosu na ostale oblike hroma.',
+							'Sadrži patentirani hrom pikolinat (CHROMAX) koji osigurava izrazito stabilnu strukturu hroma i maksimalnu apsorpciju. CHROMAX je patentirani oblik trovalentnog hroma i pikolinske kiseline. Bioraspoloživost ovog patentiranog oblika potkrepljena je brojnim studijama koje ukazuju na njegovu superiornost u odnosu na ostale oblike hroma.',
 						effects:
 							'Hrom doprinosi normalnom metabolizmu makronutrijenata i održavanju normalnog nivoa glukoze u krvi.'
 					},
 					{
-						id: 2,
+						id: 123,
 						name: 'Alphalipoin forte',
 						desc: 'Kapsule',
 						image: 'alphalipoin.png',
@@ -1333,17 +1355,17 @@ const body = {
 							'Alfa-lipoinska kiselina ima sposobnost da neutralizuje slobodne radikale i štiti ćelije od njihovog štetnog delovanja. Jedna gastrorezistentna kapsula sadrži 300 mg alfa-lipoinske kiseline.'
 					},
 					{
-						id: 3,
+						id: 124,
 						name: 'GLUCOkontrol',
 						desc: 'Tablete',
 						image: 'glucokontrol.png',
 						purpose:
-							'dodatak ishrani namenjen za kontrolu komplikacija dijabetesa. Zahavljujući odabranim i izbalansiranim sastojcima, GLUCOkontrol smanjuje nivo glukoze i slobodnih radikala i ublažava oksidativni stres i posledice polineuropatije. ',
+							'Dodatak ishrani namenjen za kontrolu komplikacija dijabetesa. Zahavljujući odabranim i izbalansiranim sastojcima, GLUCOkontrol smanjuje nivo glukoze i slobodnih radikala i ublažava oksidativni stres i posledice polineuropatije. ',
 						effects:
 							'Zahvaljujući alfa-lipolinskoj kiselini, pospešuje ugradnju glukoze u ćeliju i povećava osetljivost na insulin, dok drugi sastojci pomažu u stabilizaciji nivoa glukoze i lipida u krvi, doprinose normalnom metabolizmu i jačaju imuni sistem.'
 					},
 					{
-						id: 4,
+						id: 125,
 						name: 'R-LIPOINN®',
 						desc: 'Tablete',
 						image: 'rlipoinn.png',
@@ -1351,7 +1373,7 @@ const body = {
 							'Jedini preparat u našoj zemlji koji sadrži Natrijum R lipoat koji se u organizmu metaboliše u R alfa lipoinsku kiselinu – bez sintetičkog S oblika koji se nalazi u svim preparatima alfa lipoinske kiseline prisutnim na našem tržištu.'
 					},
 					{
-						id: 5,
+						id: 126,
 						name: 'Stevia Zero Cal',
 						desc: 'Tablete',
 						image: 'stevia.png',
@@ -1363,13 +1385,13 @@ const body = {
 				]
 			},
 			urinarni: {
-				id: 9,
+				id: 'urinarni',
 				name: 'Urinarni trakt',
-				desc: 'Urinarni trakt',
+				desc: 'Lečenje urinarnog trakta',
 				image: 'urinary.png',
 				products: [
 					{
-						id: 1,
+						id: 127,
 						name: 'Čaj noćnog mokrenja kod dece',
 						desc: 'Čaj',
 						image: 'nocno-mokrenje.png',
@@ -1377,7 +1399,7 @@ const body = {
 							'Sastojci ovog čaja, svojim protivupalnim i antiseptičnim efektom povoljno deluju na eventualnu iritaciju sluzokože mokraćnih kanala, a spazmolitičnim efektom deluju na ublažavanje grčeva ili bolova.'
 					},
 					{
-						id: 2,
+						id: 128,
 						name: 'Čaj kod upale mokraćne bešike',
 						desc: 'Čaj',
 						image: 'mokracna-besika.png',
@@ -1385,7 +1407,7 @@ const body = {
 							'Sastojci ovog čaja, svojim antimikrobnim dejstvom deluju na uzročnike bakterijskih infekcija i upale mokraćne bešike, a spazmolitičnim efektom povoljno deluju na ublažavanje grčeva i bolova.Takođe, aktivni sastojci svojim diuretičnim efektom povoljno deluju na olakšanje izmokravanja.'
 					},
 					{
-						id: 3,
+						id: 129,
 						name: 'Čaj kod zapaljenja bubrega',
 						desc: 'Čaj',
 						image: 'zapaljenje-bubrega.png',
@@ -1393,7 +1415,7 @@ const body = {
 							'Sastojci ovog čaja, svojim antimikrobnim dejstvom deluju na uzročnike bakterijskih infekcija urinarnog sistema, takođe, svojim diuretičnim efektom povoljno deluju na olakšanje izmokravanja. Aktivni sastojci deluju i protivupalno, kao i na ublažavanje grčeva i bolova kod upale bubrega.'
 					},
 					{
-						id: 4,
+						id: 130,
 						name: 'Čaj za ublažavanje tegoba kod mioma',
 						desc: 'Čaj',
 						image: 'ublazavanje-mioma.png',
@@ -1401,7 +1423,7 @@ const body = {
 							'Aktivni sastojci lekovitog bilja svojim diuretičnim efektom olakšavaju mokrenje.Preporučuje se: ženama, kod obilnih menstrualnih krvarenja, bolova, osećaja težine i pritiska u donjem delu stomaka, kod tegoba sa mokrenjem izazvanih prisustvom mioma.'
 					},
 					{
-						id: 5,
+						id: 131,
 						name: 'Čaj za ublažavanje tegoba kod kamena u bubregu',
 						desc: 'Čaj',
 						image: 'kamen-u-bubregu.png',
@@ -1411,13 +1433,13 @@ const body = {
 				]
 			},
 			menopauza: {
-				id: 10,
+				id: 'menopauza',
 				name: 'Menopauza',
-				desc: 'Menopauza',
+				desc: 'Olakšavanje menopauze',
 				image: 'menopause.png',
 				products: [
 					{
-						id: 1,
+						id: 132,
 						name: 'Genestin forte',
 						desc: 'Genestin',
 						image: 'genestin.png',
@@ -1427,7 +1449,7 @@ const body = {
 							'Dodatak ishrani bogat standardizovanim biljnim extraktima. Ovako složen sastav Genestin forte tableta omogućava da se pokrije kompleksna slika pre i menopauze .Iz biljke Preslice je dobijen 2 % extract organskog silicijuma koji je od primarnog značaja za metabolizam kalcijuma, magnezijuma, i mnogih drugih elemenata bitnih za očuvanje koštane mase kao i za kvalitet kose i noktiju.Zahvaljujući kompleksnom sastavu Genestin forte efikasno ublažava probleme menopauze.'
 					},
 					{
-						id: 2,
+						id: 133,
 						name: 'Dietpharm Refemin',
 						desc: 'Suplement',
 						purpose:
@@ -1436,7 +1458,7 @@ const body = {
 							'Cimicifuga racemosa doprinosi smanjenju osećaja nelagodnosti u menopauzi.Doprinosi normalnoj menopauzi i normalnom mentalnom i fizičkom stanju žena u menopauzi.'
 					},
 					{
-						id: 3,
+						id: 134,
 						name: 'Luprinn',
 						desc: 'Kapsule',
 						image: 'luprinn.png',
@@ -1446,7 +1468,7 @@ const body = {
 							'Efikasno reguliše neprijatne simptome menopauze.Direktna absoprcija, visoka bioraspoloživost.Redukuje pojavu valunga, nesanice i povećane razdražljivosti nakon 4 nedelje.'
 					},
 					{
-						id: 4,
+						id: 135,
 						name: 'Meno Flavon',
 						desc: 'Maxmedica',
 						image: 'menoflavon.png',
@@ -1456,9 +1478,10 @@ const body = {
 							'Preporučuje se primena Meno Flavon kapsula u menopauzi, u cilju ublažavanja simptoma koji je prate:valunga (osećaj velike toplote),osećaja umora i iscrpljenosti,promena raspoloženja,poremećaja spavanja i lošeg sna ,kao i smanjenja rizika od pojave: osteoporoze ,kardiovaskularnih bolesti.'
 					},
 					{
-						id: 5,
+						id: 136,
 						name: 'Menopace',
 						desc: 'Suplement',
+						image: 'menopace.png',
 						purpose:
 							'Podrška ishrani za vreme i nakon menopauze.Posebna formulacija sa preko 20 vitamina i minerala i niskim doza sojinih izoflavona.Namenjen ženama u menopauzi i nakon nje. 85% efikasnosti u otklanjanju fizičkih i psihičkih simptoma menopauze.',
 						effects:
@@ -1469,19 +1492,19 @@ const body = {
 		}
 	},
 	noge: {
-		id: 4,
+		id: 'noge',
 		name: 'Noge',
 		desc: 'Noge',
 		image: 'legs.png',
 		parts: {
 			butine: {
-				id: 1,
+				id: 'butine',
 				name: 'Butine',
 				desc: 'proširenih vena',
 				image: 'veins.png',
 				products: [
 					{
-						id: 1,
+						id: 137,
 						name: 'AVARICON® HEMOR',
 						desc: 'Krem',
 						purpose:
@@ -1490,25 +1513,25 @@ const body = {
 							'Zahvaljujući blagotvornom dejstvu lekovitih sastojaka i posebnoj formulaciji njihovih koncentracija, Avaricon hemor krem posebno pogoduje osobama koje pate od tegoba koje stvara upaljena, bolna i iziritirana i/ili isušena koža i sluznica analne regije (hemoroidi, analna fisura). Hamamelis je u tradicionalnoj medicini poznat po svojim antiinflamatornim, regenerativnim i lokalnim hemostatskim svojstvima zbog kojih se decenijama koristi kao pomoć u terapiji hemoroida.'
 					},
 					{
-						id: 2,
+						id: 138,
 						name: 'Cedralex',
 						desc: 'Krem',
 						image: 'cedralex.png',
 						purpose:
-							'svojom bogatom teksturom nežno hidrira kožu i uz trenutni efekat hlađenja umanjuje osećaj teških i umornih nogu. Nelepljiva, brzo upijajuća formulacija koja ne ostavlja tragove omogućava lako nanošenje tokom celog dana, pružajući osećaj lakoće u nogama.'
+							'Svojom bogatom teksturom nežno hidrira kožu i uz trenutni efekat hlađenja umanjuje osećaj teških i umornih nogu. Nelepljiva, brzo upijajuća formulacija koja ne ostavlja tragove omogućava lako nanošenje tokom celog dana, pružajući osećaj lakoće u nogama.'
 					},
 					{
-						id: 3,
+						id: 139,
 						name: 'Venodia plus',
 						desc: 'Tablete',
 						image: 'venodiaplus.png',
 						purpose:
-							'dodatak ishrani koji sadrži diosmin, hesperidin, ekstrakte borovnice i koprive, koji mogu doprineti očuvanju periferne cirkulacije.',
+							'Dodatak ishrani koji sadrži diosmin, hesperidin, ekstrakte borovnice i koprive, koji mogu doprineti očuvanju periferne cirkulacije.',
 						effects:
 							'Glavni aktivni sastojci su diosmin i hesperidin prirodnog porekla. Diosmin i hesperidin mogu povoljno uticati na povećanje venskog tonusa i otpornost kapilara. Ekstrakt lista koprive povoljno utiče na cirkulaciju u stopalima i može doprineti smanjenju osećaja umornih i teških nogu. Doprinosi eliminaciji štetnih sastojaka i drenaži organizma. Ekstrakt borovnice može doprineti održavanju elastičnosti krvnih sudova, povoljno deluje na mikrocirkulaciju i smanjenje osećaja teških nogu.'
 					},
 					{
-						id: 4,
+						id: 140,
 						name: 'Venogel',
 						desc: 'Gel',
 						image: 'venogel.png',
@@ -1518,7 +1541,7 @@ const body = {
 							'Jedinstvena Vitalisova formula neutrališe proširene vene i popucale kapilare brzo, lako i potpuno prirodno. Venogel pospešuje cirkulaciju, jača i tonizira zidove krvnih sudova, štiti krvne sudove od upale i neguje kožu.'
 					},
 					{
-						id: 5,
+						id: 141,
 						name: 'Erbaven retard',
 						desc: 'Dijetetski dodatak',
 						image: 'erbaven.png',
@@ -1529,21 +1552,14 @@ const body = {
 					}
 				]
 			},
-			kolena: {
-				id: 2,
-				name: 'Kolena',
-				desc: 'Kolena',
-				image: '',
-				products: []
-			},
 			zglob: {
-				id: 4,
-				name: 'Skočni Zglob',
-				desc: 'Zglob',
+				id: 'zglob',
+				name: 'Skočni zglob',
+				desc: 'Zglobovi Noge',
 				image: 'ankle.png',
 				products: [
 					{
-						id: 1,
+						id: 142,
 						name: 'Arthronal',
 						desc: 'Kapsule',
 						image: 'arthronal.png',
@@ -1553,7 +1569,7 @@ const body = {
 							'Potpomaže normalno stvaranja kolagena, vezivnog tkiva i normalnu koštanu funkciju.Poboljšava fukcionalni kapacitet zglobova.Potpomaže zdrav inflamatorni odgovor.'
 					},
 					{
-						id: 2,
+						id: 143,
 						name: 'Cartinorm',
 						desc: 'Prašak za oralni rastvor',
 						image: 'cartinorm.png',
@@ -1563,7 +1579,7 @@ const body = {
 							'Glukozamin je gradivna komponenta hrskavice. Ima povoljne efekte na očuvanje i održavanje optimalne funkcije hrskavice i zglobova i to normalizujući funkciju hondrocita (ćelija hrskavice).Hondroitin-sulfat je glavna komponenta hrskavice, konstruktivni sastojak proteoglikana koji obezbeđuje mehanička i elastična svojstva hrskavice. Deficit hondroitin-sulfata u hrskavici je povezan sa pojavom osteoartritisa.'
 					},
 					{
-						id: 3,
+						id: 144,
 						name: 'Flexaktiv 9',
 						desc: 'Tablete',
 						image: 'flexaktiv9.png',
@@ -1573,26 +1589,27 @@ const body = {
 							'Glukozamin je osnovni gradivni materijal zglobnih struktura. Indijski tamjan doprinosi održavanju normalne pokretljivosti zglobova.Rizoma kurkume smanjuje otečenost zglobova, ima protivupalno dejstvo.Rizoma đumbira smanjuje bol kod osoba sa osteoartritisom.Vitamin C doprinosi normalnom stvaranju kolagena za normalnu funkciju kostiju i hrskavice te doprinosi zaštiti ćelija od oksidativnog stresa.Mangan doprinosi normalnom stvaranju vezivnog tkiva, doprinosi zaštiti ćelija od oksidativnog stresa te doprinosi održavanju normalnih kostiju.Selen doprinosi zaštiti ćelija od oksidativnog stresa.'
 					},
 					{
-						id: 4,
+						id: 145,
 						name: 'No-Dol max',
 						desc: 'Tablete',
+						image: 'nodol-max.png',
 						purpose:
-							'preporučuju se kod hroničnih reumatskih tegoba, kao i kod sportskih povreda.',
+							'Preporučuju se kod hroničnih reumatskih tegoba, kao i kod sportskih povreda.',
 						effects:
-							': Dijetetski dodatak ishrani sa manganom, glukozaminom, kondroitinom, MSM kompleksom i biljnim ekstraktima aloje i đavolje kandže, koji povoljno utiče na pokretljivost zglobova. Olakšava tegobe izazvane hroničnim upalama zglobova, smanjuje bolove i oticanje, pospešuje pokretljivost zglobova i ubrzava oporavak nakon povreda i preloma.'
+							'Dijetetski dodatak ishrani sa manganom, glukozaminom, kondroitinom, MSM kompleksom i biljnim ekstraktima aloje i đavolje kandže, koji povoljno utiče na pokretljivost zglobova. Olakšava tegobe izazvane hroničnim upalama zglobova, smanjuje bolove i oticanje, pospešuje pokretljivost zglobova i ubrzava oporavak nakon povreda i preloma.'
 					},
 					{
-						id: 5,
+						id: 146,
 						name: 'K2D3',
 						desc: 'Tablete',
 						image: 'k2d3.png',
 						purpose:
-							'sadrži najoptimalniju kombinaciju dva esencijalna vitamina koji sinergistički deluju na jačanje kostiju. Preporučuje se uz kalcijum osobama koje boluju od osteoporoze',
+							'Sadrži najoptimalniju kombinaciju dva esencijalna vitamina koji sinergistički deluju na jačanje kostiju. Preporučuje se uz kalcijum osobama koje boluju od osteoporoze',
 						effects:
-							'poboljšava apsorpciju i upotrebljivost kalcijuma,usmerava kalcijum u kosti,podstiče izgradnju i regeneraciju kostiju,poboljšava mineralizaciju kostiju,povećava gustinu kostiju.K2D3 usmerava kalcijum u kosti umesto u krvne sudove što je istovremeno bitno i za zdravlje kostiju i za kardiovaskularno zdravlje.'
+							'Poboljšava apsorpciju i upotrebljivost kalcijuma,usmerava kalcijum u kosti,podstiče izgradnju i regeneraciju kostiju,poboljšava mineralizaciju kostiju,povećava gustinu kostiju.K2D3 usmerava kalcijum u kosti umesto u krvne sudove što je istovremeno bitno i za zdravlje kostiju i za kardiovaskularno zdravlje.'
 					},
 					{
-						id: 6,
+						id: 147,
 						name: 'Hyalfit',
 						desc: 'Kapsule',
 						image: 'hyalfitkapsule.png',
@@ -1602,17 +1619,17 @@ const body = {
 							'Kolagen utiče na ćelije hrskavice i kostiju tako što stimuliše povećanje proizvodnje dodatnog, novog kolagena i sprečava razgradnju već postojeće strukture hrskavice. Time se poboljšava pokretljivost zglobova .Boswellia ublažava proces upala, pozitivno deluje kod ublažavanja simptoma osteoartritisa, pomaže kod bolova u zgobovima, jutarnje ukočenosti i poboljšava pokretljivost zglobova. Hondroitin sulfat je važna strukturna komponeneta hrskavice i pomaže kod otpornosti na pritisak u zglobu. Hijaluronska kiselina ima esencijalnu ulogu u održavanju normalne funkcije zglobova'
 					},
 					{
-						id: 7,
+						id: 148,
 						name: 'Vitalis Sports Cream',
 						desc: 'Krem',
 						image: 'sportscream.png',
 						purpose:
 							'Sports cream je biljni antireumatik, efikasan kod reume, artritisa, sportskih povreda, bolova u leđima, ukočenog vrata, tegoba kod poslovnih ljudi. Zaustavlja reumatske i sportske bolove.',
 						effects:
-							'Trenutno ublažava bol.Eukaliptus, nana, ruzmarin i aloe vera će vratiti mladost Vašim zglobovima.Sports cream ne samo da ublažava bol nego i jača hrskavicu i poboljšava cirkulaciju u samom zglobu.'
+							'Trenutno ublažava bol.Eukaliptus, nana, ruzmarin i aloe vera će vratiti mladost Vašim zglobovima.Sports cream ne samo da ublažava bol nego i jača hrskavicu i poboljšava cirkulaciju u samom zglobu.'
 					},
 					{
-						id: 8,
+						id: 149,
 						name: 'Artox Gel',
 						desc: 'Gel',
 						image: 'artoxgel.png',
@@ -1622,7 +1639,7 @@ const body = {
 							'Aktivni sastojci Artox gela ostvaruju i antizapaljenska, antiedematozna i analgetska svojstva delujući povoljno na smanjenje bola, otoka i upale.'
 					},
 					{
-						id: 9,
+						id: 150,
 						name: 'Hyalfit',
 						desc: 'Gel',
 						image: 'hyalfitgel.png',
@@ -1632,7 +1649,7 @@ const body = {
 							'Mentol u kombinaciji sa alkoholom prokrvljuje, hladi i pomaže da se bolje apsorbuju aktivne supstance.Preparat sadrži uravnoteženu kombinaciju tri vrste biljaka (indijski tamjan - Boswellia serrata, gavez- Symphytum officinale, divlji kesten- Aesculus hyppocastanum) sa blagotvornim dejstvom na celokupni koštano-mišićni sistem.Hyalfit gel je dodatno obogaćen hijaluronskom kiselinom, koja je sastavni deo sinovijalne tečnosti zglobova.'
 					},
 					{
-						id: 10,
+						id: 151,
 						name: 'Cetilar',
 						desc: 'Krem',
 						image: 'cetilar.png',
@@ -1640,48 +1657,48 @@ const body = {
 							'Cetilar krem je nova formula brzog dejstva za lokalnu upotrebu kod traumatičnih i artritičnih bolova u zglobovima, mišićima i tetivama.',
 
 						effects:
-							'koja poboljšava funkciju zglobova, povećava obim pokreta i ublažava bol.Zbog svojih odličnih svojstava hlađenja i podmazivanja, proizvod je pogodan za sportsku i terapijsku masažu, a koristi se i kao pomoć kod bolova u zglobovima, tetivama i mišićno-skeletnom sistemu.'
+							'Koja poboljšava funkciju zglobova, povećava obim pokreta i ublažava bol.Zbog svojih odličnih svojstava hlađenja i podmazivanja, proizvod je pogodan za sportsku i terapijsku masažu, a koristi se i kao pomoć kod bolova u zglobovima, tetivama i mišićno-skeletnom sistemu.'
 					},
 					{
-						id: 11,
+						id: 152,
 						name: 'NEM',
 						desc: 'Kapsule',
 						image: 'nem.png',
 						purpose:
-							'sadrže membranu ljuske jajeta u prahu koja je prirodan izvor proteina, prirodnog glukozamina, prirodnog hondroitin sulfata, prirodne hijaluronske kiseline i prirodnog kolagena tipa I.',
+							'Sadrže membranu ljuske jajeta u prahu koja je prirodan izvor proteina, prirodnog glukozamina, prirodnog hondroitin sulfata, prirodne hijaluronske kiseline i prirodnog kolagena tipa I.',
 						effects:
 							'Membrana ljuske jajeta sadrži identične komponente kao i ljudski zglobovi, tako da predstavlja koristan izvor hranljivih supstanci neophodnih za stalno obnavljanje hrskavice i vezivnog tkiva, održavanje punog kvaliteta zdravlja zglobne hrskavice i okolnih struktura.'
 					},
 					{
-						id: 12,
+						id: 153,
 						name: 'Biofreeze',
 						desc: 'Gel',
 						image: 'biofreeze.png',
 						purpose:
 							'Biljni ekstrakti Biofreeze gela predstavljaju analgetičku komponentu koja blagotvorno deluje na povređeno i oštećeno tkivo, u smislu lokalnog analgetičkog efekta. Bol uklanja brzo i efikasno. Prodire duboko i obezbeđuje produženo dejstvo.',
 						effects:
-							':Brzo i efikasno uklanja sve vrste bolova i grčeva uz prijatan osećaj hlađenja, podstiče cirkulaciju i olakšava tegobe nastale kao posledica proširenih vena: bol ,otok, napetost, trnjenje, grčeve, pucanje kapilara, osećaj “teških nogu”, pomaže kod sportskih povreda, istegnuća i uganuća, otklanja glavobolju, smanjuje bolove u vratu i leđima. Zbog svoje teksture analgetskog dejstva i osvežavajućeg mirisa mentola pogodan je za masažu.'
+							'Brzo i efikasno uklanja sve vrste bolova i grčeva uz prijatan osećaj hlađenja, podstiče cirkulaciju i olakšava tegobe nastale kao posledica proširenih vena: bol ,otok, napetost, trnjenje, grčeve, pucanje kapilara, osećaj “teških nogu”, pomaže kod sportskih povreda, istegnuća i uganuća, otklanja glavobolju, smanjuje bolove u vratu i leđima. Zbog svoje teksture analgetskog dejstva i osvežavajućeg mirisa mentola pogodan je za masažu.'
 					}
 				]
 			}
 		}
 	},
 	imunitet: {
-		id: 5,
+		id: 'imunitet',
 		name: 'Imunitet',
-		desc: 'Imunitet',
+		desc: 'preparati za podizanje imuniteta',
 		image: 'imunitet.png',
 		parts: {
 			imunitet: {
-				id: 1,
+				id: 'imunitet-deo',
 				name: 'Imunitet',
-				desc: 'Imunitet',
+				desc: 'preparati za podizanje imuniteta',
 				image: 'immune.png',
 				products: [
 					{
-						id: 1,
+						id: 154,
 						name: 'GinsengPlus',
-						desc: 'GinsengPlus',
+						desc: 'Dijetetski suplement',
 						image: 'ginsengplus.png',
 						purpose:
 							'GinsengPlus je dijetetski dodatak ishrani (dijetetski suplement) koji sadrži standardizovane biljne ekstrakte korejskog i sibirskog ženšena, gvarane, kola oraha, vitamin C i E , kreatin i karnitin.',
@@ -1689,7 +1706,7 @@ const body = {
 							'Ovi aktivni sastojci se brzo apsorbuju i koriste u našem organizmu pružajući mu momentalni osećaj energije. Karnitin stimuliše proizvodnju energije na ćeliskom nivou i ima važnu ulogu u metabolizmu masnih kiselina, neophodan je za dobro funkcionisanje mišića. Kreatin omogućava maksimalno iskorišćenje ćelijskih energetskih rezervi, povećava energetski metabolizma mišića i odlaganju faze zamora tokom vežbanja.'
 					},
 					{
-						id: 2,
+						id: 155,
 						name: 'Omega 3',
 						desc: 'Alkakaps',
 						image: 'omega3.png',
@@ -1697,7 +1714,7 @@ const body = {
 							'Zа kаrdiovаskulаrnu prevenciju posle preležаnog infаrktа miokаrdа.Kod povećаnog nivoа trigliceridа i holesterolа u krvi.Kod povišenog krvnog pritiskа.Kod demencije, smаnjene koncetrаcije i gubitkа pаmćenjа, kod depresije i Alchаjmerove bolesti.'
 					},
 					{
-						id: 3,
+						id: 156,
 						name: 'Vitamini C, Cink, D3 1000',
 						desc: 'BiVits Activa',
 						image: 'vitamini.png',
@@ -1707,7 +1724,7 @@ const body = {
 							'Doprinosi normalnoj funkciji imunog sistema, zdravlju nervnog i kardiovaskularnog sistema i antioksidativnoj zaštiti ćelija.'
 					},
 					{
-						id: 4,
+						id: 157,
 						name: 'Cinkić imuno',
 						desc: 'Dodatak ishrani',
 						image: 'cinkic.png',
@@ -1717,7 +1734,7 @@ const body = {
 							'Pored toga:cink i vitamin A doprinose održavanju normalnog vida ,vitamin D je značajan za održavanje normalnih zuba i potreban za normalan rast i razvoj kostiju kod dece.'
 					},
 					{
-						id: 5,
+						id: 158,
 						name: 'Echinaid',
 						desc: 'kapsule',
 						image: 'echinaid.png',
@@ -1727,7 +1744,7 @@ const body = {
 							'Svakodnevna upotreba Echinacee može sprečiti i/ili pomoći u borbi protiv prehlada, gripa i prisustva bakterija u gornjim respiratornim putevima antitela, te na taj način organizam postaje otporniji na napade patogenih mikroorganizama.'
 					},
 					{
-						id: 6,
+						id: 159,
 						name: 'Pro Beta Glukan',
 						desc: 'kapsule',
 						image: 'betaglukan.png',
@@ -1737,16 +1754,17 @@ const body = {
 							'Pro Beta Glukan®1275 mg ima širok spektar delovanja jer predstavlja kombinaciju beta glukana sa dobrim bakterijama, cinkom i vitaminima C i D. Na taj način delovanje je osnaženo i prošireno na sve one faktore koji utiču na poboljšanje opšteg stanja organizma pružajući mu potpunu zaštitu od virusa, bakterija, iscrpljenosti i stresa.'
 					},
 					{
-						id: 7,
+						id: 160,
 						name: 'Propomel',
 						desc: 'kapi za odrasle',
+						image: 'propomel.png',
 						purpose:
-							'kod infekcija gornjih disajnih puteva, prehlade, gripa i drugih stanja praćenih povišenom temperaturom i malaksalošću - za jačanje odbrambene sposobnosti organizma - za ublažavanje simptoma oboljenja desni, sluzokože usta, grla i ždrela - u stanjima iscrpljenosti i stresa - za spoljašnju upotrebu, kod manjih oštećenja kože.',
+							'Kod infekcija gornjih disajnih puteva, prehlade, gripa i drugih stanja praćenih povišenom temperaturom i malaksalošću - za jačanje odbrambene sposobnosti organizma - za ublažavanje simptoma oboljenja desni, sluzokože usta, grla i ždrela - u stanjima iscrpljenosti i stresa - za spoljašnju upotrebu, kod manjih oštećenja kože.',
 						effects:
 							'Propomel kapi za odrasle sadrže prečišćeni propolis u razblaženom etanolu.'
 					},
 					{
-						id: 8,
+						id: 161,
 						name: 'Oligogal Se',
 						desc: 'kapsule',
 						image: 'oligogal.png',
@@ -1754,7 +1772,7 @@ const body = {
 							'Jačanje imuniteta, održavanje prirodne ravnoteže u organizmu i usporavanje starenja.'
 					},
 					{
-						id: 9,
+						id: 162,
 						name: 'Omega junior',
 						desc: 'kapi',
 						image: 'omegajr.png',
@@ -1768,42 +1786,45 @@ const body = {
 		}
 	},
 	kosti: {
-		id: 6,
+		id: 'kosti',
 		name: 'Skelet',
-		desc: 'Kostiju',
+		desc: 'Lokomotorni Sistem',
 		image: 'bones.png',
 		parts: {
 			kosti: {
-				id: 1,
+				id: 'kosti-deo',
 				name: 'Skelet',
-				desc: 'Kostiju',
+				desc: 'Lokomotorni Sistem',
 				image: 'bones.png',
 				products: [
 					{
-						id: 1,
+						id: 163,
 						name: 'Allga San akut Genu',
 						desc: 'Mast',
+						image: 'acut-genu.png',
 						purpose:
 							'Sa efektom zagrevanja je specijalna mast za kolena koja neguje i opušta napeta kolena tokom masaže. Ubrzava cirkulaciju i eliminiše medijatore zapaljenja.'
 					},
 					{
-						id: 2,
+						id: 164,
 						name: 'Aqua Ice',
 						desc: 'Sprej',
+						image: 'aqua-ice.png',
 						purpose:
-							'zahvaljujući svom sastavu i bogatoj formulaciji aktivnih komponenti, pomaže kod ublažavanja tegoba nastalih usled nagnječenja, iščašenja i sportskih povreda. Postiže optimalni efekat uz maksimalnu bezbednost primene.',
+							'Zahvaljujući svom sastavu i bogatoj formulaciji aktivnih komponenti, pomaže kod ublažavanja tegoba nastalih usled nagnječenja, iščašenja i sportskih povreda. Postiže optimalni efekat uz maksimalnu bezbednost primene.',
 						effects:
 							'Povoljno deluje na ukočenost i napetost u mišićima, zglobovima i kostima.'
 					},
 					{
-						id: 3,
+						id: 165,
 						name: 'ARTHROGUARD',
 						desc: 'Dodatak ishrani',
+						image: 'arthroguard.png',
 						purpose:
 							'Dodatak ishrani na bazi glukozamina, hondroitin-sulfata, hidrolizata kolagena uz dodatak biljnih sastojaka i odabranih vitamina i minerala čije sinergističko dejstvo doprinosi održavanju zdravlja hrskavice i kostiju, formiranju vezivnog tkiva i kolagena.'
 					},
 					{
-						id: 4,
+						id: 166,
 						name: 'Arthronal',
 						desc: 'Krem',
 						image: 'arthronal.png',
@@ -1813,77 +1834,155 @@ const body = {
 							'Povoljno utiče na bol i ograničenu pokretljivost kod pacijenata sa osteartrozom kolena, kuka, malih zglobova šake, odnosno kod osteoartroze na nivou kičmenog stuba.'
 					},
 					{
-						id: 5,
+						id: 167,
 						name: 'GAVEZ GEL',
 						desc: 'Gel',
+						image: 'gavebol.png',
 						purpose:
 							'Sa 10% ekstraktom gaveza kao aktivnom supstancom, predstavlja jedinstven preparat gaveza na našem tržištu. Primenjuje se kod :-Akutne povrede praćene hematomom-Distenzije i distorzije zglobova-Nagnječenja-Kontuzije-Sportske povrede-Upale tetiva.',
 						effects: 'Sa rashladnim efektom.'
 					},
 					{
-						id: 6,
+						id: 168,
 						name: 'Cartigel',
 						desc: 'Gel',
+						image: 'cartigel.png',
 						purpose:
-							'Cartigel je jedinstvena kombinacija etarskih ulja, mentola i kamfora koja pomaže kod:– Bolova u zglobovima i mišićima,– Reumatskih tegoba,– Sportskih povreda,– Glavobolja,– Bolova u vratu,– Bolova u leđima, naročito kod išijasa,– Fibromialgija.',
+							'Cartigel je jedinstvena kombinacija etarskih ulja, mentola i kamfora koja pomaže kod: Bolova u zglobovima i mišićima, Reumatskih tegoba, Sportskih povreda, Glavobolja, Bolova u vratu, Bolova u leđima, naročito kod išijasa, Fibromialgija.',
 						effects:
 							'Deluje protivupalno, poboljšava cirkulaciju na mestu bola i postiže blago anestezirajući efekat, pri čemu se osećaj bola postepeno smanjuje.'
 					},
 					{
-						id: 7,
+						id: 169,
 						name: 'Fortinn Cold',
 						desc: 'Gel',
+						image: 'fortinn.png',
 						purpose:
 							'U svom sastavu sadrži visoku koncentraciju aktivnih komponenata koje nakon nanošenja ostvaruju prijatan osećaj hlađenja i osveženja, obezbeđujući postepeno smanjenje upale i bola na mestu oboljenja ili povrede.',
 						effects:
 							'Kod tegoba nastalih usled reumatskih stanja, sa efektom hlađenja.'
 					},
 					{
-						id: 8,
+						id: 170,
 						name: 'Gavebol',
 						desc: 'Gel',
+						image: 'gavebol-quick.png',
 						purpose:
-							'preparat koji sadrži 30% ekstrakta korena gaveza čiji osnovni sastojci omogućavaju primenu ovog gela kod istegnuća, iščašenja i različitih vrsta povredaNamena:- kod uganuća i iščašenja zglobova- reumatskih deformiteta ručnih i nožnih zglobova- nakon fraktura kostiju- kod posekotina, modrica i ujeda insekata.'
+							'Preparat koji sadrži 30% ekstrakta korena gaveza čiji osnovni sastojci omogućavaju primenu ovog gela kod istegnuća, iščašenja i različitih vrsta povredaNamena:- kod uganuća i iščašenja zglobova- reumatskih deformiteta ručnih i nožnih zglobova- nakon fraktura kostiju- kod posekotina, modrica i ujeda insekata.'
 					},
 					{
-						id: 9,
+						id: 171,
 						name: 'REUMA KUPKA',
 						desc: 'Etarsko ulje',
+						image: 'reuma.png',
 						purpose: 'Etarsko ulje ruzmarina,Etarsko ulje zimzelena.',
 						effects:
 							'Blagotvorno dejstvo toplih lekovitih kupki poznato je od davnina.Reuma kupka sa visokom koncentracijometarskihulja ruzmarinai zimzelena povoljno deluje naperifernucirkulaciju, proširujekrvne sudove i povećavaprokrvljenostkože. Olakšava reumatsketegobe uzglobovima i mišićima,bolove u leđima i kičmenom stubu i smanjuje napetost muskulature.'
 					},
 					{
-						id: 10,
+						id: 172,
 						name: 'Khan Tigrov krem',
 						desc: 'Gel',
+						image: 'khan.png',
 						purpose:
-							'preporučuje se kod reumatskih tegoba, lumbaga, neuralgija i ukočenosti, kao i kod uganuća, iščašenja i istegnuća nastalih prilikom sportskih ili rekreativnih aktivnosti.Zahvaljujući krem gel podlozi, Khan tigrov krem gel se može nanositi i lako razmazivati na sve delove tela, uključujući kosmate i eksponirane delove, ne ostavljajući masne tragove.'
+							'Preporučuje se kod reumatskih tegoba, lumbaga, neuralgija i ukočenosti, kao i kod uganuća, iščašenja i istegnuća nastalih prilikom sportskih ili rekreativnih aktivnosti.Zahvaljujući krem gel podlozi, Khan tigrov krem gel se može nanositi i lako razmazivati na sve delove tela, uključujući kosmate i eksponirane delove, ne ostavljajući masne tragove.'
 					},
 					{
-						id: 11,
+						id: 173,
 						name: 'Arnicare',
 						desc: 'Gel',
+						image: 'arnicare.png',
 						purpose:
 							'Arnica montana je tradicionalno u upotrebi još od XVI veka u tretmanu otklanjanja bola, ukočenosti i napetosti u mišićima i zglobovima.',
 						effects:
 							'Ekstrakti biljnih fenola iz cveta biljke Arnika montana  dokazano ispoljavaju protivupalno dejstvo ubrzo nakon nanošenja na osetljivo mesto, doprinoseći ublažavanju bola.Proizvodi gel, krem i stik za decu ne sadrže parabene, lanolin i mineralna ulja, kao ni veštačke boje i mirise. Ne lepi se, ne masti i brzo apsorbuje u kožu.'
 					},
 					{
-						id: 12,
+						id: 174,
 						name: 'ALPSKA',
 						desc: 'Krem',
+						image: 'alpenkrauter.png',
 						purpose:
 							'Specifična je po svom veoma prijatnom svežem mirisu, plavo-zelene boje.Alpska krema je idealna i kao terapija i pomoć sportistima.Ova krema velike efikasnosti primenjuje se nakon sportskih povreda, upala i istegnuća mišića.Takođe, pomoćiće vam i ako imate problem sa lošom cirkulacijom, bolove u nogama i venama, glavobolje.'
 					},
 					{
-						id: 13,
+						id: 175,
 						name: 'Brdjanski melem',
 						desc: 'melem protiv reume',
+						image: 'brdjanski-melem.png',
 						purpose:
-							'nastao je pažljivim odabirom korisnih sastojaka uglavnom iz prirode našeg podneblja. To je jako važno, zato što smo se mi vekovima navikavali (adaptirali) da koristimo biljke iz svog okruženja. Naš organizam je pripremljen da izvuče najveću korist za sebe iz domaćih biljaka',
+							'Nastao je pažljivim odabirom korisnih sastojaka uglavnom iz prirode našeg podneblja. To je jako važno, zato što smo se mi vekovima navikavali (adaptirali) da koristimo biljke iz svog okruženja. Naš organizam je pripremljen da izvuče najveću korist za sebe iz domaćih biljaka',
 						effects:
 							'Efikasno deluje kod lumbaga, artritisa, išijasa, spondiloze, zglobova i ostalih neuritisa, bolova u leđima, ramenu…'
+					}
+				]
+			}
+		}
+	},
+	masa: {
+		id: 'masa',
+		name: 'Telesna masa',
+		desc: 'Mršavljenje i kontrola',
+		image: 'weight.png',
+		parts: {
+			masa: {
+				id: 'masa-deo',
+				name: 'Telesna masa',
+				desc: 'Mršavljenje i kontrola',
+				image: 'weight.png',
+				products: [
+					{
+						id: 176,
+						name: 'Apuretin Slim',
+						desc: 'Suplement',
+						image: 'apuretin-slim.png',
+						purpose:
+							'Apuretin Slim je dodatak ishrani sa prirodnim sastojcima koji pomažu pri eliminaciji viška vode iz organizma, ubrzavaju metabolizam i redukuju telesnu težinu.'
+					},
+					{
+						id: 177,
+						name: 'Herbafast Fiber',
+						desc: 'Suplement - Jagoda',
+						image: 'herbafast-fiber.png',
+						purpose:
+							'Izaziva osećaj sitosti i sprečava nastanak masnih naslaga.',
+						effects:
+							'Vlakna vezuju vodu i zauzimaju prostor u želucu, pa je potreba za hranom manja.Pomaže da se masnoće ne vezuju i sprečava stvaranje masnih naslaga. Smanjuje se vreme zadržavanja ostataka hrane u crevima, a samim tim i zadržavanje štetnih materija.'
+					},
+					{
+						id: 178,
+						name: 'Herbafast Lady',
+						desc: 'Kapsule',
+						image: 'herbafast-lady.png',
+						purpose: 'Kontrola telesne mase i mršavljenje',
+						effects:
+							'Herbafast lady kapsule sadrže posebnu kombinaciju probiotske kvasnice i snažnog antioksidansa, koja uzbija glad i žudnju za slatkišima i brzom hranom, smanjujući telesnu težinu.'
+					},
+					{
+						id: 179,
+						name: 'Jabukovo sirće + vitamin C',
+						desc: 'Maxmedica',
+						image: 'jabukovo-sirce-vitamin-c.png',
+						purpose: `Preporučuje se:
+											kod osoba na redukcionoj dijeti
+											za ubrzanje metabolizma
+											za regulaciju nivoa masti u krvi
+											u cilju detoksikacije organizma
+											za smanjenje umora i iscrpljenosti
+											za normalno funkcionisanje imunološkog sistema
+										`,
+						effects:
+							'Delujući principi poreklom iz jabukovog sirćeta povoljno utiču na regulaciju nivoa masti u krvi i ubrzanje metabolizma, a sa vitaminom C olakšavaju detoksikaciju organizma.'
+					},
+					{
+						id: 180,
+						name: 'Čaj za mršavljenje',
+						desc: 'Čaj',
+						image: 'caj-za-mrsavljenje.png',
+						purpose:
+							'Pomoćno sredstvo tokom dijete, kada je izmenjen režim ishrane, kao i za održavanje željene telesne težine.',
+						effects:
+							'Aktivni sastojci biljaka povoljno deluju na metabolizam regulisanjem varenja, eliminisanjem gasova, regulisanjem stolice a olakšavanjem izmokravanja i lučenja znoja ubrzava se eliminacija štetnih produkata.'
 					}
 				]
 			}
