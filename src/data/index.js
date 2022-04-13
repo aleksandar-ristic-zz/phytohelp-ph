@@ -482,7 +482,7 @@ const body = {
 	ruka: {
 		id: 'ruka',
 		name: 'Ruka',
-		desc: 'Ruka',
+		desc: 'Zglobovi ruke',
 		image: 'hand.png',
 		parts: {
 			zglob: {
@@ -1500,7 +1500,7 @@ const body = {
 			butine: {
 				id: 'butine',
 				name: 'Butine',
-				desc: 'proširenih vena',
+				desc: 'Lečenje proširenih vena',
 				image: 'veins.png',
 				products: [
 					{
@@ -1554,8 +1554,8 @@ const body = {
 			},
 			zglob: {
 				id: 'zglob',
-				name: 'Skočni zglob',
-				desc: 'Zglobovi Noge',
+				name: 'Zglobovi Noge',
+				desc: 'Skočni, koleno i hrskavice',
 				image: 'ankle.png',
 				products: [
 					{

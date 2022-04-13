@@ -1095,7 +1095,6 @@ t
 .form button:disabled {
 	background-color: hsla(355deg, 78%, 56%, 0.5);
 }
-
 .message {
 	opacity: 0;
 	position: absolute;
@@ -1117,7 +1116,6 @@ t
 	border-color: crimson;
 	animation: 5s mess forwards ease;
 }
-
 @keyframes mess {
 	0% {
 		opacity: 0;
@@ -1140,36 +1138,30 @@ t
 .search__container {
 	padding-bottom: 2rem;
 }
-
 .search__container .img__container img {
 	max-height: 30vh;
 }
-
 .search__form__wrapper {
 	max-width: 100%;
 	padding: 0.5rem;
 	background-color: hsla(153deg, 39%, 41%, 0.8);
 }
-
 .search__form {
 	width: fit-content;
 	max-width: calc(100% + 0.5rem);
 }
-
 .search__form h3 {
 	padding-left: 0.5rem;
 	padding-bottom: 0.5rem;
 	color: hsl(0deg, 0%, 100%);
 	font-weight: 600;
 }
-
 .search__form .search__body {
 	overflow-x: auto;
 	gap: 0.35rem;
 	flex-wrap: nowrap;
 	padding-bottom: 1.5rem;
 }
-
 .search__form .search__body button {
 	padding: 0.25rem 0.75rem;
 	background-color: transparent;
@@ -1181,17 +1173,14 @@ t
 	text-transform: uppercase;
 	transition: 0.3s all ease;
 }
-
 .search__form .search__body button:hover,
 .search__form .search__body button:active {
 	border: 1px solid hsl(129deg, 53%, 90%);
 }
-
 .search__form .search__body button.active {
 	position: relative;
 	transform: scale(1.02);
 }
-
 .search__form .search__body button.active::before {
 	content: '';
 	position: absolute;
@@ -1203,7 +1192,6 @@ t
 	transform: translateY(-50%);
 	animation: show-up 0.35s forwards ease;
 }
-
 .search__form .submit {
 	padding: 0.5rem 1.25rem;
 	background-color: hsl(355deg, 78%, 56%);
@@ -1219,7 +1207,6 @@ t
 .search__form .submit:hover {
 	background-color: crimson;
 }
-
 @keyframes show-up {
 	from {
 		width: 0;
@@ -1230,7 +1217,6 @@ t
 		opacity: 1;
 	}
 }
-
 @media (min-width: 1024px) {
 	.search__form {
 		padding: 1rem;
