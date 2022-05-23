@@ -720,13 +720,6 @@ const body = {
 							'Brzo i efikasno uklanja sve vrste bolova i grčeva uz prijatan osećaj hlađenja, podstiče cirkulaciju i olakšava tegobe nastale kao posledica proširenih vena: bol ,otok, napetost, trnjenje, grčeve, pucanje kapilara, osećaj “teških nogu”, pomaže kod sportskih povreda, istegnuća i uganuća, otklanja glavobolju, smanjuje bolove u vratu i leđima. Zbog svoje teksture analgetskog dejstva i osvežavajućeg mirisa mentola pogodan je za masažu.'
 					}
 				]
-			},
-			prst: {
-				id: 'prst',
-				name: 'Reuma',
-				desc: 'Lečenje i olakšanje',
-				image: 'wrist.png',
-				products: []
 			}
 		}
 	},
@@ -2138,13 +2131,13 @@ const body = {
 		}
 	},
 	misici: {
-		id: 'mišići',
+		id: 'misici',
 		name: 'Mišići',
 		desc: 'Razvijanje i grčevi',
 		image: 'muscle.png',
 		parts: {
 			misici: {
-				id: 'mišići-deo',
+				id: 'misici-deo',
 				name: 'Mišići',
 				desc: 'Razvijanje i grčevi',
 				image: 'muscle.png',

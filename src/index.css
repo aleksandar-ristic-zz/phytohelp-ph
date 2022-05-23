@@ -1239,6 +1239,10 @@ t
 		padding: 1rem;
 	}
 
+	.search__form .search__body {
+		overflow-x: visible;
+	}
+
 	.about {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
