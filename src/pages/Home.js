@@ -23,6 +23,7 @@ export const Home = () => {
 					<Link to='/masa/masa'>Telesna Masa</Link>
 					<Link to='/imunitet/imunitet'>Imunitet</Link>
 					<Link to='/kosti/kosti'>Skelet</Link>
+					<Link to='/misici/misici'>Mišići</Link>
 				</div>
 
 				<div className='empty-l'></div>

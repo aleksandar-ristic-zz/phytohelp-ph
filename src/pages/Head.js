@@ -32,12 +32,15 @@ export const Head = () => {
 					</Link>
 				</div>
 
-				<Link
-					tabIndex='1'
-					className='tooltip teeth'
-					title='Zubi'
-					to='/glava/zubi'
-				></Link>
+				<div className='links flex-center teeth'>
+					<Link tabIndex='1' className='tooltip ' title='Zubi' to='/glava/zubi'>
+						Zubi
+					</Link>
+
+					<Link tabIndex='1' className='tooltip' title='Grlo' to='/glava/grlo'>
+						Grlo
+					</Link>
+				</div>
 			</div>
 		</main>
 	)

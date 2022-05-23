@@ -11,16 +11,19 @@ export const About = () => {
 				<p>Naš stručni tim.</p>
 			</div>
 
-			<div className='flex-center'>
-				<img src='/img/group.jpeg' alt='stručni tim' title='stručni tim' />
+			<div className='about flex-center'>
+				<img src='/img/group.jpeg' alt='strucni tim' title='strucni tim' />
+				<img src='/img/group2.jpeg' alt='stručni tim' title='stručni tim' />
 			</div>
 
-			<div className='headline flex-center'>
+			<div className='about-headline headline flex-center'>
 				<div>
 					<p>Ponedeljak, 11.04.2022.</p>
 					<h3>Medicinska škola “Draginja Nikšić”, Sremska Mitrovica</h3>
 					<h3>Farmaceutski tehničari II godina</h3>
-					<Link to='/'>Nazad na početnu stranicu</Link>
+					<Link className='about-back' to='/'>
+						Nazad na početnu stranicu
+					</Link>
 				</div>
 			</div>
 		</main>

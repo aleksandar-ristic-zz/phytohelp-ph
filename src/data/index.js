@@ -27,7 +27,7 @@ const body = {
 						desc: 'BILJNE KAPSULE',
 						image: 'migresan.png',
 						purpose:
-							'Migresan biljne kapsule pomažu kod: Migrene,artritisa,artroze,gihta i drugih reumackih oboljenja,menstrualnih bolova i pomaže kod viskoh temperatura.',
+							'Migresan biljne kapsule pomažu kod: Migrene,artritisa,artroze,gihta i drugih reumackih oboljenja,menstrualnih bolova i pomaže kod visokih temperatura.',
 						effects:
 							'Migresan biljne kapsule sadrže u sebi ekstrakte biljke povratić (Tanacetum parthenium) .Ova biljka sadrže u sebi flavonoide, poliacetilene, seskviterpenske laktone germakranolidnog tipa. Seskviterpenski lakton PARTENOLID se nalazi u najvećem procentu.Iako je delovanje kapsula Migresan određeno mešavinom svih sastojaka ekstrakta, PARTENOLID pokazuje najveću farmakološku aktivnost i nosilac je antimigrenoznog delovanja.'
 					},
@@ -82,25 +82,6 @@ const body = {
 				desc: 'Gornji disajni putevi',
 				image: 'sinusache.png',
 				products: [
-					{
-						id: 8,
-						name: 'Žalfija',
-						desc: 'Etarsko ulje',
-						image: 'zalfija.png',
-						purpose:
-							'Doprinosi umirenju iritacija usne duplje, grla i glasnih žica.',
-						effects:
-							'Otklanja glavobolju i olakšava disanje kod infekcija disajnih puteva.'
-					},
-					{
-						id: 9,
-						name: 'Pitoma nana',
-						desc: 'Etarsko ulje',
-						image: 'nana.png',
-						purpose: 'Doprinosi normalnoj digestiji i imunitetu.',
-						effects:
-							'Pored toga, pozitivno utiče i na ublažavanje simptoma infekcija gornjih disajnih puteva, kao što su kašalj ili bolno grlo.'
-					},
 					{
 						id: 10,
 						name: 'Ekosept',
@@ -233,18 +214,6 @@ const body = {
 						limits: 'Nisita mast za nos mogu koristiti odrasli, deca i odojčad.'
 					},
 					{
-						id: 23,
-						name: 'PROPOHERB G',
-						desc: 'Sprej za grlo',
-						image: 'propoherb.png',
-						purpose:
-							'Sprej za grlo na bazi propolisa i lekovitog bilja pomaže kod upala i infekcija usne duplje i ždrela.',
-						effects:
-							'Ublažava prateće simptome oboljenja desni, kao što je paradentoza. Olakšava bol u grlu i pomaže kod suvog i nadražajnog kašlja.',
-						limits:
-							'Ne preporučuje se deci mlađoj od 6 godina. Preparat sadrži alkohol. Ne upotrebljavati duže od dve nedelje u kontinuitetu.'
-					},
-					{
 						id: 24,
 						name: 'Apis Gola',
 						desc: 'Sprej za grlo',
@@ -254,7 +223,7 @@ const body = {
 						effects:
 							'Takodje sprečava rast bakterija i gljivica u usnoj duplji.',
 						limits:
-							'Pre upotrebe promućkati !Za uzrast od 1-4 godine 3x dnevno.Za uzrast od 4-12 godina 4x dnevno.'
+							'Pre upotrebe promućkati! Za uzrast od 1-4 godine 3x dnevno.Za uzrast od 4-12 godina 4x dnevno.'
 					},
 					{
 						id: 25,
@@ -266,7 +235,7 @@ const body = {
 						effects:
 							'Pastile štite organizam od virusa i bakterija, održavaju zdravlje bronhija i respiratornog trakta, podržavaju prirodnu odbranu organizma, pomažu u ublažavanju bola u grlu, doprinose smanjenju umora.',
 						limits:
-							'Odrasli: 1 pastila 6 puta dnevno, polako rastopiti u ustima. Deca starija od 12 godina : 1 pastila 2 puta dnevno, polako rastopiti u ustima.'
+							'Odrasli: 1 pastila 6 puta dnevno, polako rastopiti u ustima. Deca starija od 12 godina : 1 pastila 2 puta dnevno, polako rastopiti u ustima.'
 					},
 					{
 						id: 26,
@@ -292,7 +261,7 @@ const body = {
 						desc: 'sirup',
 						image: 'herboral.png',
 						purpose:
-							'Kod kašlja praćenog prehladom i gripom,kod upale grla i hroničnog bronhitisa,u tretmanu prehlade i gripa. ',
+							'Kod kašlja praćenog prehladom i gripom, kod upale grla i hroničnog bronhitisa,u tretmanu prehlade i gripa. ',
 						effects:
 							'Kod održavanja pravilne funkcije respiratornog traktaza, lakše iskašljavanje sekretakod iritacije grla praćene produktivnim kašljem',
 						limits:
@@ -307,26 +276,6 @@ const body = {
 							'Dr. Theiss-ov Mucoplant Good night sirup za laku noć sadrži mešavinu ekstrakta biljaka, pa pored uskolisne bokvice sadrži kamilicu, matičnjak i majčinu dušicu, biljke koje se tradicionalno koriste za ublažavanje nelagode u disajnim putevima.',
 						effects:
 							'Posebno se preporučuje osobama sa osetljivim disajnim putevima, kod kašlja praćenog obimnim stavarnjem sekreta jer može doprineti pravilnom funkcionisanju i umanjenju nadražaja na kašalj, bez ometanja prirodnog eliminisanja sekreta, što doprinosi kvalitetnom odmoru tokom noći.'
-					},
-					{
-						id: 30,
-						name: 'Bronhoklir',
-						desc: 'sirup',
-						image: 'bronhoklir.png',
-						purpose:
-							'Sirup bršljan sadrži ekstrat lista bršljana koji razređuje sluz koja se nakuplja u disajnim putevima smanjuje neprijatne nadražaje grla i pomaže opuštanju glatkih mišićnih struktura u disajnim putevima i takoolakšava proces iskašljavanja.',
-						limits:
-							'Predstavlja pomoć kod suvog i produktivnog kašlja. Ne sadrži šećer i mogu ga koristiti i dijabetičari'
-					},
-					{
-						id: 31,
-						name: 'Beba C',
-						desc: 'sirup',
-						image: 'bebac.png',
-						purpose:
-							'Beli slez sa vitaminom C je dijetetski proizvod namenjen za održavanje zdravlja respiratornih organa.',
-						effects:
-							'Beli slez ima umirujuće i prijatno dejstvo na grlo, ždrelo i glasne žice. Pruža olakšanje u slučaju nadražaja/iritacije grla, ždrela i glasnih žica.Tradicionalno, beli slez se koristi u tretmanu suvog i nadražajnog kašlja.'
 					}
 				]
 			},
@@ -370,9 +319,9 @@ const body = {
 					},
 					{
 						id: 35,
-						name: 'Herbalsept',
+						name: 'Herbalgel',
 						desc: 'Gel',
-						image: 'herbalsept.png',
+						image: 'herbal-gel.png',
 						purpose:
 							'Gel sa hijaluronskom kiselinom protiv zubobolje i za negu desni sadrži ekstrakt kamilice, etarska ulja nane i karanfilića, i hijaluronsku kiselinu.',
 						effects:
@@ -442,6 +391,7 @@ const body = {
 						id: 41,
 						name: 'Vitrex',
 						desc: 'Dodatak ishrani',
+						image: 'vitrex.png',
 						purpose:
 							'Namenjen za potrebe ishrane kod degeneracije staklastog tela. Vitrex poboljšava metabolizam staklastog tela i vraća ga u fiziološko stanje - postepeno se povlače leteće mušice.'
 					},
@@ -474,6 +424,163 @@ const body = {
 							'Dijetetski suplement sa neuroprotektivnim dejstvom namenjen osobama koje boluju od glaukoma.',
 						effects:
 							'Ovaj preparat dizajniran je tako da pruži metaboličku potporu nervnom tkivu, zaštiti optički živac i spreči dalju progresiju bolesti. OptiNerve kao aktivnu supstancu sadrži epigalokatehin-3-galat (EGCG), potentno polifenolno jedinjenje dobijeno iz lista zelenog čaja.'
+					}
+				]
+			},
+			grlo: {
+				id: 'grlo',
+				name: 'Grlo',
+				desc: 'Lečenje grlobolje',
+				image: 'throat.png',
+				products: [
+					{
+						id: 8,
+						name: 'Žalfija',
+						desc: 'Etarsko ulje',
+						image: 'zalfija.png',
+						purpose:
+							'Doprinosi umirenju iritacija usne duplje, grla i glasnih žica.',
+						effects:
+							'Otklanja glavobolju i olakšava disanje kod infekcija disajnih puteva.'
+					},
+					{
+						id: 9,
+						name: 'Pitoma nana',
+						desc: 'Etarsko ulje',
+						image: 'nana.png',
+						purpose: 'Doprinosi normalnoj digestiji i imunitetu.',
+						effects:
+							'Pored toga, pozitivno utiče i na ublažavanje simptoma infekcija gornjih disajnih puteva, kao što su kašalj ili bolno grlo.'
+					},
+					{
+						id: 23,
+						name: 'PROPOHERB G',
+						desc: 'Sprej za grlo',
+						image: 'propoherb.png',
+						purpose:
+							'Sprej za grlo na bazi propolisa i lekovitog bilja pomaže kod upala i infekcija usne duplje i ždrela.',
+						effects:
+							'Ublažava prateće simptome oboljenja desni, kao što je paradentoza. Olakšava bol u grlu i pomaže kod suvog i nadražajnog kašlja.',
+						limits:
+							'Ne preporučuje se deci mlađoj od 6 godina. Preparat sadrži alkohol. Ne upotrebljavati duže od dve nedelje u kontinuitetu.'
+					},
+					{
+						id: 30,
+						name: 'Bronhoklir',
+						desc: 'sirup',
+						image: 'bronhoklir.png',
+						purpose:
+							'Sirup bršljan sadrži ekstrat lista bršljana koji razređuje sluz koja se nakuplja u disajnim putevima smanjuje neprijatne nadražaje grla i pomaže opuštanju glatkih mišićnih struktura u disajnim putevima i takoolakšava proces iskašljavanja.',
+						limits:
+							'Predstavlja pomoć kod suvog i produktivnog kašlja. Ne sadrži šećer i mogu ga koristiti i dijabetičari'
+					},
+					{
+						id: 31,
+						name: 'Beba C',
+						desc: 'sirup',
+						image: 'bebac.png',
+						purpose:
+							'Beli slez sa vitaminom C je dijetetski proizvod namenjen za održavanje zdravlja respiratornih organa.',
+						effects:
+							'Beli slez ima umirujuće i prijatno dejstvo na grlo, ždrelo i glasne žice. Pruža olakšanje u slučaju nadražaja/iritacije grla, ždrela i glasnih žica.Tradicionalno, beli slez se koristi u tretmanu suvog i nadražajnog kašlja.'
+					},
+					{
+						id: 'gjdLG35',
+						name: 'Tusol Jaglac',
+						desc: 'Sirup',
+						image: 'tusol-jaglac.png',
+						purpose:
+							'Ublažava nadražaj disajnih putova i smiruje kašalj, oblaže sluznicu dišnih puteva.',
+						limits: 'Prekomerno konzumiranje može imati laksativni učinak.'
+					},
+					{
+						id: 'gjdLG36',
+						name: 'LARINGINN®',
+						desc: 'Biljni proizvod',
+						image: 'laringinn.png',
+						purpose:
+							'To pomaže da sluzokoža ostane vlažna i elastična, smanjuje nelagodnost i bol, smanjuje osećaj grebanja u grlu i osećaj trenja, a time se olakšava i gutanje hrane. Koristi se radi umanjenja iritacije usne duplje i sluzokože ždrela nakon izvršenih operacija, kao i u slučaju nastanka zapaljenja.'
+					},
+					{
+						id: 'gjdLG37',
+						name: 'Čaj od Žalfije',
+						desc: 'Čaj',
+						image: 'caj-od-zalfije.png',
+						purpose:
+							'Za ispiranje usne duplje zbog bilo kakve upalne reakcije kao što su afte, upala grla, upala desni, najbolje je koristiti čaj od žalfije.',
+						effects:
+							'Priprema se lako- potrebno vam je 3 kašike žalfijinog lista (čaja)  i 1/2 litra vode. Žalfijin list poparite ključalom vodom, poklopite i ostavite da odstoji preko noći. Sutradan čaj procedite i njime ispirajte desni i usta.'
+					},
+					{
+						id: 'gjdLG38',
+						name: 'PropoMucil®',
+						desc: 'Sprej za grlo',
+						image: 'propomucil.png',
+						purpose:
+							'smanjuje upalu i bol u grlu, pomaže u rešavanju afti u usnoj duplji.',
+						effects:
+							'sadrži prečišćen standardizovan propolis (antimikrobik) sa prirodnim N-acetilcisteinom (NAC).'
+					},
+					{
+						id: 'gjdLG39',
+						name: 'PROPOMUCIL PASTILE',
+						desc: 'Pastile',
+						image: 'vitamin-c-cink.png',
+						purpose:
+							'Za razliku od ostalih pastila, deluju na uzrok upale i bola.',
+						effects:
+							'N-acetilcistein smanjuje stvaranje bakterijskog biofilma čime omogućava da propolis deluje antimikrobno- protiv virusa i bakterija, a cink i vitamin C pomažu jačanje imuniteta.'
+					},
+					{
+						id: 'gjdLG40',
+						name: 'ISLA PASTILE',
+						desc: 'Pastile',
+						image: 'isla-pastile.png',
+						purpose:
+							'Biljne pastile s originalnim ekstraktom islandskog lišaja koriste se već vekovima za zaštitu grla.',
+						effects:
+							'Sastojci isla® pastila kao zaštitni balzam oblažu nadraženu sluznicu usta, grla i ždrela i na taj način štite od daljnih nadražaja i ubrzavaju oporavak.'
+					},
+					{
+						id: 'gjdLG41',
+						name: 'Strepsils',
+						desc: 'Lozenge',
+						image: 'strepsils.png',
+						purpose:
+							'Lek je namenjen za ublažavanje simptoma infekcije usne duplje i ždrela, uključujući i bolove kod zapaljenja grla.',
+						limits:
+							'Strepsils plus lozenge su namenjene deci starijoj od 12 godina i odraslima'
+					},
+					{
+						id: 'gjdLG42',
+						name: 'Neo-angin',
+						desc: 'Antiseptik',
+						image: 'neo-angin.png',
+						purpose:
+							'Koristi se za prevenciju i efikasnu ranu terapiju manjih infekcija usta i grla. Na taj način se smanjuje upotreba antibiotika.',
+						effects:
+							'Ove infekcije dovode do zapaljenja sa simptomima poput sledećih: bol u grlu, promuklost, katar, prehlade, angina, zapaljenje oralne i faringealne sluzokože, kao i desni.',
+						limits: 'Lek je namenjen za odrasle i decu stariju od 6 godina.'
+					},
+					{
+						id: 'gjdLG43',
+						name: 'Trachisan',
+						desc: 'Antiseptik',
+						image: 'trachisan.png',
+						purpose: `Pomaže:
+						kada grlo boli, gutanje je otežano i teško se govori,
+						kada imate bakterijsku infekciju u grlu ili usnoj duplji, a nemate lekarski recept,
+						kada Vam je potrebno brzo rešenje za infekciju grla ili usne duplje.`
+					},
+					{
+						id: 'gjdLG44',
+						name: 'Pantenol sa vitaminom C',
+						desc: 'Oriblete',
+						image: 'pantenol-sa-vitaminom-c.png',
+						purpose:
+							'primenjuju za ublažavanje tegoba nastalih nakon manjih povreda ili opekotina kao i za stimulisanje regeneracije sluznice usne duplje, ždrela, jezika i desni kod nadražaja različitog porekla (duvanski dim, smog).',
+						effects:
+							'Pantenol sa vitaminom C oriblete mogu biti dodatak antibiotskoj terapiji kod lokalnih upalnih procesa usne duplje.'
 					}
 				]
 			}
@@ -613,6 +720,13 @@ const body = {
 							'Brzo i efikasno uklanja sve vrste bolova i grčeva uz prijatan osećaj hlađenja, podstiče cirkulaciju i olakšava tegobe nastale kao posledica proširenih vena: bol ,otok, napetost, trnjenje, grčeve, pucanje kapilara, osećaj “teških nogu”, pomaže kod sportskih povreda, istegnuća i uganuća, otklanja glavobolju, smanjuje bolove u vratu i leđima. Zbog svoje teksture analgetskog dejstva i osvežavajućeg mirisa mentola pogodan je za masažu.'
 					}
 				]
+			},
+			prst: {
+				id: 'prst',
+				name: 'Reuma',
+				desc: 'Lečenje i olakšanje',
+				image: 'wrist.png',
+				products: []
 			}
 		}
 	},
@@ -772,6 +886,7 @@ const body = {
 						id: 71,
 						name: 'Kapi protiv grčeva u stomaku',
 						desc: 'Tinctura Antispasmodica',
+						image: 'grcevi-u-stomaku.png',
 						purpose:
 							'Aktivni sastojci lekovitog bilja koje ulazi u sastav ove tinkture pa se preporučuje kod tegoba sa varenjem, grčeva i crevnih kolika.',
 						effects:
@@ -1041,17 +1156,19 @@ const body = {
 						id: 95,
 						name: 'Kapi protiv dijareje',
 						desc: 'Tinctura ANTIDIARRHOICA',
+						image: 'kapi-protiv-dijareje.png',
 						purpose:
 							'Preparat ima antidijaroično i antiseptično dejstvo zbog prisustva tanina, a ujedno smiruje i grčeve glatke muskulature creva. Preporučuje se uz dijetetski režim ishrane kod nespecifičnih akutnih dijareja. ',
 						effects:
 							'Tri do pet puta dnevno piti po 30 do 40 kapi sa vrućim čajem od kamilice',
 						limits:
-							'Ukoliko se uz primenu ovog preparata dijareja ne zaustavi u roku od 3 – 4 dana, neophodno je potražiti pomoć lekara.'
+							'Ukoliko se uz primenu ovog preparata dijareja ne zaustavi u roku od 3 - 4 dana, neophodno je potražiti pomoć lekara.'
 					},
 					{
 						id: 96,
 						name: 'Bulacol 500',
 						desc: 'Tablete',
+						image: 'bulacol-500.png',
 						purpose:
 							'Sadrži probiotskoi kvasac po imenu Saccharomyces boulardii. Ublažava intenzitet i trajanje stomačnih tegoba kao što su dijareja, nadutost, mučnina, bol u stomaku.'
 					},
@@ -1085,6 +1202,7 @@ const body = {
 						id: 100,
 						name: 'Čaj od cveta divizme',
 						desc: 'Čaj',
+						image: 'cvet-divizme.png',
 						purpose:
 							'Preporučuje se kod proliva izazvanih upalom crevne sluzokože.',
 						effects:
@@ -1175,6 +1293,7 @@ const body = {
 						id: 108,
 						name: 'Primed 7',
 						desc: 'Preparat',
+						image: 'primed7.png',
 						purpose:
 							'Prirodan preparat, napravljen po proverenoj recepturi, na bazi meda i ekstrakta zelenih oraha. Ne sadrži veštačke boje, konzervanse i druge aditive. Preporučuje se kod: oslabljenje funkcije štitaste žlezde (Hashimoto tireoiditis ili drugi proces koji dovodi do oštećenja funkcije štitaste žlezde),',
 						effects:
@@ -1452,6 +1571,7 @@ const body = {
 						id: 133,
 						name: 'Dietpharm Refemin',
 						desc: 'Suplement',
+						image: 'refemin.png',
 						purpose:
 							'Refemin je dijetetski suplement sa ekstraktom korena cimicifuge, namenjen ženama u predmenstrualnom periodu i periodu menopauze.',
 						effects:
@@ -1507,6 +1627,7 @@ const body = {
 						id: 137,
 						name: 'AVARICON® HEMOR',
 						desc: 'Krem',
+						image: 'avaricon.png',
 						purpose:
 							'Ima umirujuća, antiseptička i regenerativna svojstva pogodna za negu iritirane kože i sluznice analne regije. Formula za negu i ublažavanje tegoba upaljene, bolne, iritirane kože i sluznice analne regije.',
 						effects:
@@ -1914,6 +2035,34 @@ const body = {
 							'Nastao je pažljivim odabirom korisnih sastojaka uglavnom iz prirode našeg podneblja. To je jako važno, zato što smo se mi vekovima navikavali (adaptirali) da koristimo biljke iz svog okruženja. Naš organizam je pripremljen da izvuče najveću korist za sebe iz domaćih biljaka',
 						effects:
 							'Efikasno deluje kod lumbaga, artritisa, išijasa, spondiloze, zglobova i ostalih neuritisa, bolova u leđima, ramenu…'
+					},
+					{
+						id: '1dVbhvg',
+						name: 'Čaj kod reume',
+						desc: 'Čaj kod reume',
+						image: 'caj-kod-reume.png',
+						purpose:
+							'za ublažavanje bolova u kostima i zglobovima i za povećanje pokretljivosti zglobova zahvaćenih reumatskim promenama.',
+						limits:
+							'Tokom trudnoće i dojenja ne preporučuje se upotreba čaja kod reume.'
+					},
+					{
+						id: '1dVbhvher',
+						name: 'Reuma Zglobex',
+						desc: 'Biljni preparat',
+						image: 'reuma-zglobex.png',
+						purpose:
+							'Preparat za reumatske tegobe na biljnoj bazi. Za olakšanje na koje možete da računate. Koristi se kod reumatksih tegoba, prvih simptoma artitisa, kod znakova upale u zglobovima.'
+					},
+					{
+						id: '1dVbhvher2r',
+						name: 'Reumel-D',
+						desc: 'Krem',
+						image: 'reumel-d.png',
+						purpose:
+							'Zahvaljujući bogatoj kombinaciji lekovitih biljaka, Reumel-D ublažava simptome reumatizma, dovodi do smanjenja ukočenosti i bola u zglobovima i olakšava njihovu pokretljivost.',
+						effects:
+							'Kod lumboišijalgije sanira bolove u lumbalnom delu kičme, kukovima, potkolenicama i prstima. Tretiranjem sportskih povreda, Reumel-D smanjuje upalu i bol u mišićima, povoljno deluje kod uboja, nagnječenja i istegnuća.'
 					}
 				]
 			}
@@ -1983,6 +2132,54 @@ const body = {
 							'Pomoćno sredstvo tokom dijete, kada je izmenjen režim ishrane, kao i za održavanje željene telesne težine.',
 						effects:
 							'Aktivni sastojci biljaka povoljno deluju na metabolizam regulisanjem varenja, eliminisanjem gasova, regulisanjem stolice a olakšavanjem izmokravanja i lučenja znoja ubrzava se eliminacija štetnih produkata.'
+					}
+				]
+			}
+		}
+	},
+	misici: {
+		id: 'mišići',
+		name: 'Mišići',
+		desc: 'Razvijanje i grčevi',
+		image: 'muscle.png',
+		parts: {
+			misici: {
+				id: 'mišići-deo',
+				name: 'Mišići',
+				desc: 'Razvijanje i grčevi',
+				image: 'muscle.png',
+				products: [
+					{
+						id: 181,
+						name: 'Magnall® Relax',
+						desc: 'Suplement Kapsule',
+						image: 'magnall-relax.png',
+						purpose:
+							'Jedinstvena formulacija magnezijuma i kompleksa vitamina B u visokim dozama, koji na prirodan i siguran način pomaže da ostanete mirni, opušteni i u dobrom raspoloženju (psihički i fizički).',
+						effects:
+							'Magnall® Relax dovodi do smanjenja stresa i omogućava da se osećate bolje, odmornije i opuštenije. Preporučuje se kod osoba koji puno rade i pod konstantnim su stresom, kod anksioznih i depresivnih osoba, za osobe koji su u situacijama velike napetosti i stresa, osobama sa stalnim glavoboljama, poboljšava sposobnost učenja i pamćenja.',
+						limits:
+							'Magnall® Relax je u formi kapsula koje su biljnog porekla i ne sadrži gluten. Pakovanje sadrži 30 kapsula.'
+					},
+					{
+						id: 182,
+						name: 'Magnevital Magnezijum',
+						desc: 'Gel',
+						image: 'magnevital.png',
+						purpose:
+							'Hlorid gel joni za opuštanje je formulisan na bazi magnezijum hlorida, koji se brzo resorbuje preko kože, a efekat delovanja se oseća brzo po nanošenju proizvoda.',
+						effects:
+							'Svojim umirujućim svojstvima na organizam, olakšava nastupanje sna, pomaže u stanjima nervne napetosti, stresa, iscrpljenosti, premora i nesanice. Poboljšava hidrataciju kože, smanjuje ukočenost i osećaj težine u nogama, što je posebno važno starijim osobama i osobama koje se slabo kreću.'
+					},
+					{
+						id: 183,
+						name: 'Magenzijum 400',
+						desc: 'Granule',
+						image: 'mg400-active.png',
+						purpose:
+							'Granule sa zaslađivačem su dijetetski suplement koji doprinosi razvnoteži elektrolita, normalnoj funkciji mišića, smanjenju umora i iscrpljenosti i normalnom funkcionisanju nervnog sistema.',
+						effects:
+							'Kod umora i iscrpljenosti. Kod povećanih potreba organizma za magnezijumom i vitaminima B kompleksa. Pomaže normalnoj funkciji mišića i elektrolitnom disbalansu. Pomaže normalnoj funkciji nervnog sistema.'
 					}
 				]
 			}

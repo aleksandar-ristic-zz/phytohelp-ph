@@ -1165,7 +1165,7 @@ t
 .search__form .search__body button {
 	padding: 0.25rem 0.75rem;
 	background-color: transparent;
-	border: 0;
+	border: 1px solid transparent;
 	border-radius: 0.25rem;
 	color: hsl(129deg, 53%, 90%);
 	font-size: 1rem;
@@ -1217,8 +1217,36 @@ t
 		opacity: 1;
 	}
 }
+.about {
+	display: grid;
+	place-items: center;
+	grid-template-columns: 1fr;
+}
+.about img {
+	display: inline;
+	max-width: 98vw;
+}
+.about-back {
+	text-decoration: underline;
+	color: hsl(355deg, 78%, 56%);
+}
+.about-headline {
+	padding-left: 1rem;
+}
+
 @media (min-width: 1024px) {
 	.search__form {
 		padding: 1rem;
+	}
+
+	.about {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.about img {
+		display: inline;
+		max-width: auto;
+		max-height: 30vw;
 	}
 }
